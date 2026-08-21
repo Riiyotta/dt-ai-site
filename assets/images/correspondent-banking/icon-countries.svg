@@ -1,0 +1,13 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<g id="Group_2">
+<path id="Path" d="M10.6667 24L13.3333 26.6667L10.6667 29.3333" stroke="var(--stroke-0, white)" stroke-width="1.5" stroke-linecap="square"/>
+<path id="Path_2" d="M13.3333 27.6667C13.8856 27.6667 14.3333 27.219 14.3333 26.6667C14.3333 26.1144 13.8856 25.6667 13.3333 25.6667V26.6667V27.6667ZM5.33333 25.6667H4.33333V27.6667H5.33333V26.6667V25.6667ZM13.3333 26.6667V25.6667H5.33333V26.6667V27.6667H13.3333V26.6667Z" fill="var(--stroke-0, white)"/>
+<path id="Path_3" d="M4 16C6.17236 16 9.56267 16 9.56267 16C11.6453 16 13.3333 14.312 13.3333 12.2293C13.3333 11.2293 12.936 10.2693 12.2293 9.56264L8.956 6.28931" stroke="var(--stroke-0, white)" stroke-width="1.5" stroke-linecap="round"/>
+<path id="Path_4" d="M24.3894 24.584L22.0201 21.0307C21.5908 20.3867 20.8694 20 20.0961 20C19.2201 20 18.4201 19.5053 18.0281 18.7213L17.8508 18.3667C17.5254 17.716 17.5254 16.9493 17.8508 16.2987L19.3614 13.2773C19.7521 12.4947 20.5534 12 21.4294 12C23.7247 12 25.0115 12 27.3068 12" stroke="var(--stroke-0, white)" stroke-width="1.5" stroke-linecap="round"/>
+<path id="Path_5" d="M18.6667 27.6947C24.0173 26.4853 28 21.7253 28 16C28 9.35733 22.6427 4 16 4C9.35733 4 4 9.35733 4 16C4 17.92 4.45867 19.7267 5.256 21.3333" stroke="var(--stroke-0, white)" stroke-width="1.5" stroke-linecap="square"/>
+</g>
+<g id="Path_6">
+</g>
+</g>
+</svg>

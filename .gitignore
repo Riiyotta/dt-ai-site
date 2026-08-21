@@ -1,0 +1,19 @@
+# Claude Code — local session/config, never published
+.claude/
+.playwright-mcp/
+
+# Video: 12 MP4s, ~1.7 GB. Nine exceed GitHub's 100 MB per-file hard limit,
+# so these cannot be committed without Git LFS. Pages render without them
+# (<video> elements stay on their poster frames).
+assets/clips/
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp

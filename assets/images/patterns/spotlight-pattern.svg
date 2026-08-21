@@ -1,0 +1,50 @@
+<svg
+  width="160"
+  height="160"
+  viewBox="0 0 160 160"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <rect width="160" height="160" fill="url(#pattern0_0_134)" />
+  <circle cx="88" cy="56" r="5" fill="black" />
+  <circle cx="88" cy="24" r="4" fill="black" />
+  <circle cx="72" cy="56" r="5" fill="black" />
+  <circle cx="72" cy="24" r="4" fill="black" />
+  <circle cx="72" cy="104" r="5" fill="black" />
+  <circle cx="72" cy="136" r="4" fill="black" />
+  <circle cx="88" cy="104" r="5" fill="black" />
+  <circle cx="88" cy="136" r="4" fill="black" />
+  <circle cx="56" cy="72" r="5" fill="black" />
+  <circle cx="24" cy="72" r="4" fill="black" />
+  <circle cx="56" cy="88" r="5" fill="black" />
+  <circle cx="24" cy="88" r="4" fill="black" />
+  <circle cx="104" cy="72" r="5" fill="black" />
+  <circle cx="136" cy="72" r="4" fill="black" />
+  <circle cx="120" cy="40" r="4" fill="black" />
+  <circle cx="40" cy="40" r="4" fill="black" />
+  <circle cx="40" cy="120" r="4" fill="black" />
+  <circle cx="120" cy="120" r="4" fill="black" />
+  <circle cx="152" cy="136" r="4" fill="black" />
+  <circle cx="24" cy="8" r="4" fill="black" />
+  <circle cx="136" cy="152" r="4" fill="black" />
+  <circle cx="8" cy="24" r="4" fill="black" />
+  <circle cx="136" cy="8" r="4" fill="black" />
+  <circle cx="8" cy="136" r="4" fill="black" />
+  <circle cx="152" cy="24" r="4" fill="black" />
+  <circle cx="24" cy="152" r="4" fill="black" />
+  <circle cx="104" cy="88" r="5" fill="black" />
+  <circle cx="136" cy="88" r="4" fill="black" />
+  <defs>
+    <pattern
+      id="pattern0_0_134"
+      patternUnits="userSpaceOnUse"
+      viewBox="-116 0 16 16"
+      width="10%"
+      height="10%"
+      patternContentUnits="objectBoundingBox"
+    >
+      <circle cx="-108" cy="8" r="2" fill="black" />
+    </pattern>
+  </defs>
+</svg>
