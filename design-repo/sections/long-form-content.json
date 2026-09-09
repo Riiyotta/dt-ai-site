@@ -1,0 +1,72 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "long-form-content",
+  "typeId": "long-form-content",
+  "registryId": "section.long-form-content",
+  "version": "1.0.0",
+  "category": "editorial",
+  "purpose": "A single tall content container holding an entire long-form document (changelog feed, SVB update FAQ, blog article body) with no repeating section boundaries of its own.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "editorial",
+    "long-form"
+  ],
+  "measuredFrom": [
+    "/changelog/ (27872px)",
+    "/svb-update/ (2556px)",
+    "/blog/announcing-column/ and other posts (~2900-3960px)"
+  ],
+  "contentModel": {
+    "required": [
+      "body (rich text, no maxWords ceiling \u2014 this section type is exempt, see constraints)"
+    ],
+    "optional": [
+      "breadcrumb",
+      "dateline",
+      "author",
+      "socialShare"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "2556-27872px, entirely content-length-driven"
+    },
+    "tablet_810x1080": {
+      "height": "scales +5-15%"
+    },
+    "mobile_390x844": {
+      "height": "scales +20-50%"
+    }
+  },
+  "motion": {
+    "driven": false
+  },
+  "compatibility": {
+    "maxInstancesPerPage": 1,
+    "onlyOn": [
+      "changelog",
+      "svb-update",
+      "blog-post"
+    ]
+  },
+  "generation": {
+    "componentRefs": [
+      "primitives/Text.json"
+    ],
+    "tokenRefs": [
+      "tokens.10-semantic.typography-roles.roles.body.md"
+    ]
+  },
+  "accessibility": {
+    "headingLevel": "h1 for post/page title, h2+ for in-body subheads",
+    "articleSemantics": "wrap in <article>"
+  },
+  "constraints": {
+    "maxWordsExempt": true,
+    "exemptReason": "long-form editorial content (changelog entries, blog articles) is intentionally unbounded; word budgets apply to structured marketing sections, not prose articles"
+  }
+}

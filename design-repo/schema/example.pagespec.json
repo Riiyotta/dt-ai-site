@@ -1,0 +1,210 @@
+{
+  "page": {
+    "route": "/ach/",
+    "title": "ACH | DT&AI",
+    "template": "product-page"
+  },
+  "theme": "dtai-light",
+  "nodes": [
+    {
+      "type": "site-header",
+      "registryId": "section.site-header",
+      "content": {
+        "logo": {
+          "assetRole": "logo.wordmark",
+          "alt": "DT&AI"
+        },
+        "navLinks": [
+          {
+            "label": "Products",
+            "href": "/#products"
+          },
+          {
+            "label": "Developers",
+            "href": "/developers/"
+          },
+          {
+            "label": "Blog",
+            "href": "/blog/"
+          },
+          {
+            "label": "Company",
+            "href": "/company/"
+          }
+        ],
+        "signInLink": "/signin",
+        "primaryCta": {
+          "label": "Get started",
+          "href": "/signup"
+        }
+      }
+    },
+    {
+      "type": "hero-product",
+      "registryId": "section.hero-product",
+      "content": {
+        "eyebrow": "ACH",
+        "headline": "Ultimate control and simplicity",
+        "description": "Originate ACH credits and debits with a single, flexible API built for scale and speed.",
+        "primaryCta": {
+          "label": "Get started",
+          "href": "/signup"
+        },
+        "heroVisual": {
+          "assetRole": "hero.illustration",
+          "alt": "ACH transfer flow diagram"
+        }
+      },
+      "motion": {
+        "role": "tokens.10-semantic.motion-roles.roles.entrance.fadeUp"
+      },
+      "reducedMotionFallback": "static, no opacity/transform animation on headline or description"
+    },
+    {
+      "type": "benefit-narrative",
+      "registryId": "section.benefit-narrative",
+      "content": {
+        "eyebrow": "Flexibility",
+        "heading": "Unparalleled ACH flexibility",
+        "body": "ACH has a reputation for taking too long. At DT&AI, originate same-day credits and debits with full programmatic control over timing, returns, and settlement.",
+        "visual": {
+          "assetRole": "product.icon",
+          "alt": "ACH settlement timeline"
+        }
+      },
+      "motion": {
+        "role": "tokens.10-semantic.motion-roles.roles.entrance.fadeUp"
+      },
+      "reducedMotionFallback": "static"
+    },
+    {
+      "type": "benefit-narrative",
+      "registryId": "section.benefit-narrative",
+      "content": {
+        "eyebrow": "Returns",
+        "heading": "Be at the helm of returns and disputes",
+        "body": "Programmatically control returns through DT&AI's API, with full visibility into every return code and dispute status as it happens."
+      }
+    },
+    {
+      "type": "customer-quote-panel",
+      "registryId": "section.customer-quote-panel",
+      "content": {
+        "quote": "We know the ecosystem very well and DT&AI provides the speed, flexible account management, and reliability we need.",
+        "attribution": {
+          "name": "Jordan Lee",
+          "role": "Head of Payments",
+          "company": "Brex"
+        }
+      }
+    },
+    {
+      "type": "related-products-grid",
+      "registryId": "section.related-products-grid",
+      "content": {
+        "eyebrow": "Products",
+        "heading": "Infrastructure products built for developers",
+        "products": [
+          {
+            "title": "Wire",
+            "description": "Complete control of FedWire transfers.",
+            "href": "/wire/",
+            "icon": {
+              "assetRole": "product.icon",
+              "alt": "Wire icon"
+            }
+          },
+          {
+            "title": "Ledger",
+            "description": "A programmable ledger for every account.",
+            "href": "/ledger/",
+            "icon": {
+              "assetRole": "product.icon",
+              "alt": "Ledger icon"
+            }
+          },
+          {
+            "title": "Checks",
+            "description": "Issue and deposit checks programmatically.",
+            "href": "/checks/",
+            "icon": {
+              "assetRole": "product.icon",
+              "alt": "Checks icon"
+            }
+          }
+        ]
+      },
+      "motion": {
+        "role": "tokens.10-semantic.motion-roles.roles.entrance.slideUp"
+      },
+      "reducedMotionFallback": "static grid, no stagger"
+    },
+    {
+      "type": "final-cta-footer",
+      "registryId": "section.final-cta-footer",
+      "content": {
+        "ctaHeadline": "Start building today",
+        "ctaDescription": "Build your own products, on your terms, without layers in between.",
+        "primaryCta": {
+          "label": "Get started",
+          "href": "/signup"
+        },
+        "footerSitemap": [
+          {
+            "title": "Products",
+            "links": [
+              {
+                "label": "ACH",
+                "href": "/ach/"
+              },
+              {
+                "label": "Wire",
+                "href": "/wire/"
+              }
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              {
+                "label": "About",
+                "href": "/company/"
+              },
+              {
+                "label": "Careers",
+                "href": "/careers/"
+              }
+            ]
+          },
+          {
+            "title": "Developers",
+            "links": [
+              {
+                "label": "Docs",
+                "href": "/docs/"
+              },
+              {
+                "label": "API reference",
+                "href": "/docs/api/"
+              }
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              {
+                "label": "Privacy",
+                "href": "/privacy/"
+              },
+              {
+                "label": "Terms",
+                "href": "/terms/"
+              }
+            ]
+          }
+        ],
+        "logo": "DT&AI"
+      }
+    }
+  ]
+}

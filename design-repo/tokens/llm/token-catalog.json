@@ -1,0 +1,26 @@
+{
+  "$schema": "dtai-design-tokens/llm/token-catalog",
+  "note": "Full canonical file-path references. A PageSpec or section instance must always cite the full path (e.g. 'tokens.10-semantic.color-roles.roles.text.body'), never a bare alias like '--color-body'.",
+  "files": [
+    "tokens.00-foundation.color",
+    "tokens.00-foundation.typography",
+    "tokens.00-foundation.spacing",
+    "tokens.00-foundation.radius",
+    "tokens.00-foundation.elevation",
+    "tokens.00-foundation.motion",
+    "tokens.00-foundation.breakpoint",
+    "tokens.00-foundation.grid",
+    "tokens.10-semantic.color-roles",
+    "tokens.10-semantic.typography-roles",
+    "tokens.10-semantic.motion-roles",
+    "tokens.20-component.button",
+    "tokens.20-component.card",
+    "tokens.20-component.nav",
+    "tokens.20-component.section",
+    "tokens.20-component.input",
+    "tokens.20-component.badge",
+    "tokens.30-layout.container",
+    "tokens.30-layout.grid",
+    "tokens.30-layout.section-spacing"
+  ]
+}

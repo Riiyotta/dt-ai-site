@@ -1,0 +1,28 @@
+{
+  "$schema": "dtai-design-tokens/component/section",
+  "verticalRhythm": {
+    "standard": {
+      "paddingY": "--space-20",
+      "paddingYValue": "5rem",
+      "measured": {
+        "uses": 66
+      }
+    },
+    "compact": {
+      "paddingY": "--space-12",
+      "paddingYValue": "3rem"
+    },
+    "hero": {
+      "paddingY": "--space-24",
+      "paddingYValue": "6rem"
+    }
+  },
+  "containerMaxWidth": {
+    "token": "--screen-lg",
+    "value": "1112px",
+    "measured": {
+      "uses": 764,
+      "as": "the single most common max-width across the site \u2014 the standard content container"
+    }
+  }
+}

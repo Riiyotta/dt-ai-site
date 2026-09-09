@@ -1,0 +1,65 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "trust-logo-band",
+  "typeId": "trust-logo-band",
+  "registryId": "section.trust-logo-band",
+  "version": "1.0.0",
+  "category": "social-proof",
+  "purpose": "Homepage-only 'TRUSTED AT SCALE' band with a headline stat and customer logos.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "flagship"
+  ],
+  "measuredFrom": [
+    "/ (_scale__Wrapper, 677px)"
+  ],
+  "contentModel": {
+    "required": [
+      "eyebrow",
+      "headline (role=heading.lg, maxWords 10)",
+      "logos[]"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "677px"
+    },
+    "tablet_810x1080": {
+      "height": "~780px"
+    },
+    "mobile_390x844": {
+      "height": "~1200px stacked"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.fadeUp"
+    ],
+    "reducedMotionFallback": "static"
+  },
+  "compatibility": {
+    "onlyOn": [
+      "homepage"
+    ],
+    "typicallyFollows": "hero-home"
+  },
+  "generation": {
+    "componentRefs": [
+      "components/logo-band.json"
+    ],
+    "tokenRefs": []
+  },
+  "accessibility": {
+    "headingLevel": "h2"
+  },
+  "constraints": {
+    "maxWords": {
+      "headline": 10
+    }
+  }
+}

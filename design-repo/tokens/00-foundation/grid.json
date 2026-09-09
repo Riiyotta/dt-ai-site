@@ -1,0 +1,32 @@
+{
+  "$schema": "dtai-design-tokens/foundation/grid",
+  "source": "assets/tokens/tokens.css",
+  "columns": {
+    "cols-1": "repeat(1, minmax(0, 1fr))",
+    "cols-2": "repeat(2, minmax(0, 1fr))",
+    "cols-3": "repeat(3, minmax(0, 1fr))",
+    "cols-4": "repeat(4, minmax(0, 1fr))",
+    "cols-5": "repeat(5, minmax(0, 1fr))",
+    "cols-6": "repeat(6, minmax(0, 1fr))",
+    "cols-7": "repeat(7, minmax(0, 1fr))",
+    "cols-8": "repeat(8, minmax(0, 1fr))",
+    "cols-9": "repeat(9, minmax(0, 1fr))",
+    "cols-10": "repeat(10, minmax(0, 1fr))",
+    "cols-11": "repeat(11, minmax(0, 1fr))",
+    "cols-12": "repeat(12, minmax(0, 1fr))"
+  },
+  "spans": {
+    "span-1": "span 1/span 1",
+    "span-2": "span 2/span 2",
+    "span-3": "span 3/span 3",
+    "span-4": "span 4/span 4",
+    "span-5": "span 5/span 5",
+    "span-6": "span 6/span 6",
+    "span-7": "span 7/span 7",
+    "span-8": "span 8/span 8",
+    "span-9": "span 9/span 9",
+    "span-10": "span 10/span 10",
+    "span-11": "span 11/span 11",
+    "span-12": "span 12/span 12"
+  }
+}

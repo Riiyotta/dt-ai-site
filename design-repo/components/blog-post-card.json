@@ -1,0 +1,20 @@
+{
+  "$schema": "dtai-design-tokens/component",
+  "id": "blog-post-card",
+  "composedOf": [
+    "primitives/Text",
+    "primitives/Badge",
+    "primitives/Image"
+  ],
+  "props": {
+    "category": "Badge",
+    "date": "Text role=label.sm",
+    "title": "Text role=heading.sm, maxWords 12",
+    "author": "Text role=label.sm",
+    "thumbnail": "optional Image"
+  },
+  "measured": {
+    "uses": 9,
+    "as": "one per post in the blog index grid"
+  }
+}

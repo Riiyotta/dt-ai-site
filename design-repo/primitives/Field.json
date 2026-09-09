@@ -1,0 +1,13 @@
+{
+  "$schema": "dtai-design-tokens/primitive",
+  "id": "Field",
+  "props": {
+    "type": "enum[text,email,textarea,select]",
+    "label": "string",
+    "placeholder": "string",
+    "style": "ref -> tokens.20-component.input"
+  },
+  "measured": {
+    "uses": "contact-form-panel, careers application, changelog subscribe"
+  }
+}

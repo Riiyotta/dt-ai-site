@@ -1,0 +1,67 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "dashboard-preview-panel",
+  "typeId": "dashboard-preview-panel",
+  "registryId": "section.dashboard-preview-panel",
+  "version": "1.0.0",
+  "category": "product-demo",
+  "purpose": "Screenshot/mock of the DT&AI product dashboard with a supporting narrative, used once on property-management.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "product-demo"
+  ],
+  "measuredFrom": [
+    "/property-management/ (_dashboard-preview__Section, 1081px)"
+  ],
+  "contentModel": {
+    "required": [
+      "heading (role=heading.lg, maxWords 8)",
+      "body (role=body.md, maxWords 40)",
+      "screenshot (Image, required alt)"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "1081px"
+    },
+    "tablet_810x1080": {
+      "height": "~1200px"
+    },
+    "mobile_390x844": {
+      "height": "~1600px stacked"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.blurSharpen on screenshot"
+    ],
+    "reducedMotionFallback": "static"
+  },
+  "compatibility": {
+    "maxInstancesPerPage": 1,
+    "compatibleWith": [
+      "workflow-feature-panel"
+    ]
+  },
+  "generation": {
+    "componentRefs": [
+      "primitives/Image.json"
+    ],
+    "tokenRefs": []
+  },
+  "accessibility": {
+    "headingLevel": "h2",
+    "altText": "screenshot alt required and descriptive"
+  },
+  "constraints": {
+    "maxWords": {
+      "heading": 8,
+      "body": 40
+    }
+  }
+}

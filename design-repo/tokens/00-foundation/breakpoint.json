@@ -1,0 +1,17 @@
+{
+  "$schema": "dtai-design-tokens/foundation/breakpoint",
+  "source": "assets/tokens/tokens.css",
+  "scale": {
+    "screen-nav": "870px",
+    "screen-sm": "640px",
+    "screen-md": "768px",
+    "screen-lg": "1112px",
+    "screen-xl": "1280px"
+  },
+  "note": "--screen-nav (870px) is a bespoke stop where the header nav collapses to the mobile menu, earlier than the generic --screen-md (768px).",
+  "measurementBreakpoints": {
+    "desktop": "1440x900",
+    "tablet": "810x1080",
+    "mobile": "390x844"
+  }
+}

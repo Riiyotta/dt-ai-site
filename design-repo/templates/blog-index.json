@@ -1,0 +1,28 @@
+{
+  "$schema": "dtai-design-tokens/template",
+  "id": "blog-index",
+  "purpose": "The blog listing page.",
+  "measuredRoutes": [
+    "/blog/"
+  ],
+  "nodes": [
+    {
+      "typeId": "site-header",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "blog-index-grid",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "site-footer",
+      "count": "1",
+      "optional": false
+    }
+  ],
+  "notes": [
+    "Round 3: added the trailing site-footer node. /blog/'s live build renders a real Footer__ component (confirmed in the served index.html), and compatibility/graph.json's alwaysLast rule requires every page to end in final-cta-footer or site-footer; this template previously ended on blog-index-grid with no documented reason (unlike the deliberate, documented omission for protected-deposits-page/simple-page in README's Known Gaps section)."
+  ]
+}

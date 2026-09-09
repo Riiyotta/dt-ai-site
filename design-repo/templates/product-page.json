@@ -1,0 +1,54 @@
+{
+  "$schema": "dtai-design-tokens/template",
+  "id": "product-page",
+  "purpose": "The dominant narrow-product template: hero + 1-3 benefit sections + testimonial + related-products grid + CTA footer. Confirmed by comparing measured section sequences across 11 of the 17 non-blog product-family routes.",
+  "measuredRoutes": [
+    "/ach/",
+    "/wire/",
+    "/ledger/",
+    "/checks/",
+    "/book-transfers/",
+    "/card-programs/",
+    "/bank-accounts/",
+    "/debt-financing/",
+    "/loan-origination/",
+    "/loan-purchase/",
+    "/international-wires/"
+  ],
+  "nodes": [
+    {
+      "typeId": "site-header",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "hero-product",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "benefit-narrative",
+      "count": "1-3",
+      "optional": false
+    },
+    {
+      "typeId": "customer-quote-panel",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "related-products-grid",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "final-cta-footer",
+      "count": "1",
+      "optional": false
+    }
+  ],
+  "notes": [
+    "11 of dt&ai's 17 single-product routes share this exact spine, varying only in the count of benefit-narrative instances (1 on loan-origination/loan-purchase, 2 on ach/ledger/checks/book-transfers/card-programs, 3 on wire/bank-accounts/debt-financing/international-wires).",
+    "card-programs uses a differently-named hero component ('Hero__Wrapper' vs '_hero__ProductHero' elsewhere) but the measured content model and layout are identical to hero-product; treated as the same section typeId."
+  ]
+}

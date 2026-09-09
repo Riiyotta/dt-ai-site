@@ -1,0 +1,67 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "stat-callout-panel",
+  "typeId": "stat-callout-panel",
+  "registryId": "section.stat-callout-panel",
+  "version": "1.0.0",
+  "category": "social-proof",
+  "purpose": "A row of 2-4 large stat tiles (e.g. '$150M deposit insurance'), used right after a campaign hero.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "editorial",
+    "trust-forward"
+  ],
+  "measuredFrom": [
+    "/political-treasury/ (Container, 486-936px)"
+  ],
+  "contentModel": {
+    "required": [
+      "stats[2..4]: {value (role=display.hero, maxWords 3), label (role=body.sm, maxWords 8)}"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "486px, row layout"
+    },
+    "tablet_810x1080": {
+      "height": "~560px"
+    },
+    "mobile_390x844": {
+      "height": "~900px, stacked"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.fadeUp, staggered per tile"
+    ],
+    "reducedMotionFallback": "static"
+  },
+  "compatibility": {
+    "typicallyFollows": "hero-campaign",
+    "compatibleWith": [
+      "feature-box"
+    ]
+  },
+  "generation": {
+    "componentRefs": [
+      "components/stat-tile.json"
+    ],
+    "tokenRefs": [
+      "tokens.10-semantic.typography-roles.roles.display.hero"
+    ]
+  },
+  "accessibility": {
+    "headingLevel": null
+  },
+  "constraints": {
+    "maxWords": {
+      "value": 3,
+      "label": 8
+    }
+  }
+}

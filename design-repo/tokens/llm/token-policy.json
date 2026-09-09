@@ -1,0 +1,11 @@
+{
+  "$schema": "dtai-design-tokens/llm/token-policy",
+  "rules": [
+    "Reference tokens by full canonical path (tokens.<layer>.<file>.<...>), never a bare CSS custom-property alias.",
+    "Prefer the most specific layer available: 20-component > 10-semantic > 00-foundation. Do not reach past a component token straight to a foundation primitive when a component or semantic token already covers the case.",
+    "Every color reference must resolve through tokens.10-semantic.color-roles (never a raw rgb()/hex value) which in turn resolves through tokens.00-foundation.color's --rgb-*/--color-* indirection.",
+    "Every typography reference must resolve through tokens.10-semantic.typography-roles (role name, e.g. 'heading.lg'), never a raw px size.",
+    "A generated node's text length must not exceed its bound typography role's maxWords ceiling, except long-form-content which is explicitly maxWordsExempt.",
+    "Any section using a tokens.10-semantic.motion-roles role must declare a reducedMotionFallback per schema/pagespec.schema.json's motion conditional rule."
+  ]
+}

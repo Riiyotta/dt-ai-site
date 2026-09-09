@@ -1,0 +1,70 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "hero-simple",
+  "typeId": "hero-simple",
+  "registryId": "section.hero-simple",
+  "version": "1.0.0",
+  "category": "hero",
+  "purpose": "Compact hero for institutional/one-off pages (Company, Careers, Press, Security) \u2014 short headline, no elaborate visual.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "minimal",
+    "institutional"
+  ],
+  "measuredFrom": [
+    "/company/ (864px)",
+    "/careers/ (856px)",
+    "/press/ (354px)",
+    "/security/ (308px)"
+  ],
+  "contentModel": {
+    "required": [
+      "headline (role=display.hero, maxWords 8)"
+    ],
+    "optional": [
+      "description (role=body.lg, maxWords 40)"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "308-864px, wide range by copy length"
+    },
+    "tablet_810x1080": {
+      "height": "scales +10-20%"
+    },
+    "mobile_390x844": {
+      "height": "scales +30-60%"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.fadeUp"
+    ],
+    "reducedMotionFallback": "static"
+  },
+  "compatibility": {
+    "alwaysSecond": true,
+    "followedBy": [
+      "benefit-narrative"
+    ]
+  },
+  "generation": {
+    "componentRefs": [
+      "primitives/Text.json"
+    ],
+    "tokenRefs": [
+      "tokens.10-semantic.typography-roles.roles.display.hero"
+    ]
+  },
+  "accessibility": {
+    "h1": "headline is the page's single h1"
+  },
+  "constraints": {
+    "maxInstancesPerPage": 1
+  }
+}

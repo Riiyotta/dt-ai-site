@@ -1,0 +1,63 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "stats-band",
+  "typeId": "stats-band",
+  "registryId": "section.stats-band",
+  "version": "1.0.0",
+  "category": "social-proof",
+  "purpose": "Horizontal band of 3-4 platform-scale stats near the top of a narrative landing page.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "editorial",
+    "trust-forward"
+  ],
+  "measuredFrom": [
+    "/correspondent-banking/ (_stats__Section, 312px)",
+    "/property-management/ (_stats__Section, 281px)"
+  ],
+  "contentModel": {
+    "required": [
+      "stats[3..4]: {value (role=display.hero, maxWords 4), label (role=body.sm, maxWords 8)}"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "281-312px"
+    },
+    "tablet_810x1080": {
+      "height": "~350px"
+    },
+    "mobile_390x844": {
+      "height": "~700px stacked"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.fadeUp"
+    ],
+    "reducedMotionFallback": "static"
+  },
+  "compatibility": {
+    "typicallyFollows": "hero-narrative"
+  },
+  "generation": {
+    "componentRefs": [
+      "components/stat-tile.json"
+    ],
+    "tokenRefs": []
+  },
+  "accessibility": {
+    "headingLevel": null
+  },
+  "constraints": {
+    "maxWords": {
+      "value": 4,
+      "label": 8
+    }
+  }
+}

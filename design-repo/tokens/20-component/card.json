@@ -1,0 +1,34 @@
+{
+  "$schema": "dtai-design-tokens/component/card",
+  "variants": {
+    "productCard": {
+      "background": "--color-white",
+      "radius": "--radii-2",
+      "radiusMeasured": "8px",
+      "shadow": "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.05) 0px 1px 3px 0px",
+      "padding": "--space-6",
+      "measured": {
+        "uses": 396,
+        "as": "AllProducts related-products grid tile, homepage product grid tile"
+      }
+    },
+    "statCard": {
+      "background": "--color-blue-50",
+      "radius": "--radii-2",
+      "padding": "--space-8",
+      "measured": {
+        "uses": 30,
+        "as": "stat-callout / stats-band number+label tile"
+      }
+    },
+    "quotePanel": {
+      "background": "--color-gray-50",
+      "radius": "--radii-2",
+      "padding": "--space-12",
+      "measured": {
+        "uses": 20,
+        "as": "customer-quote-panel, testimonial box"
+      }
+    }
+  }
+}

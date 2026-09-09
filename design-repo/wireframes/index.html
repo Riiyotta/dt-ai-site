@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DT&AI Wireframe Gallery</title>
+<style>
+  body { font-family: -apple-system, Inter, sans-serif; background: #f6f7fa; color: #12161e; margin: 0; padding: 24px 32px 80px; }
+  h1 { font-size: 22px; margin-bottom: 4px; }
+  .sub { color: #575a64; margin-bottom: 20px; font-size: 14px; }
+  .toolbar { position: sticky; top: 0; background: #f6f7fa; padding: 10px 0; z-index: 10; display: flex; gap: 8px; align-items: center; border-bottom: 1px solid #dfe1e6; margin-bottom: 20px; }
+  .toolbar button { padding: 6px 14px; border-radius: 999px; border: 1px solid #c7d0e0; background: white; cursor: pointer; font-size: 13px; }
+  .toolbar button.active { background: #111a4a; color: white; border-color: #111a4a; }
+  h2 { font-size: 15px; margin: 28px 0 10px; display: flex; align-items: baseline; gap: 8px; }
+  .tmpl-count { font-size: 12px; color: #7c7f88; font-weight: 400; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+  .card { background: white; border: 1px solid #dfe1e6; border-radius: 8px; overflow: hidden; }
+  .card-head { display: flex; justify-content: space-between; padding: 8px 10px; font-size: 11px; border-bottom: 1px solid #eee; }
+  .route { font-family: "JetBrains Mono", monospace; color: #111a4a; }
+  .count { color: #9a9ea8; }
+  .wf-img { width: 100%; display: block; background: #fafbfd; }
+</style>
+</head>
+<body>
+<h1>DT&AI Wireframe Gallery</h1>
+<div class="sub">34 routes, measured at 3 breakpoints via Playwright. Grouped by shared template. Real geometry, not mockups.</div>
+<div class="toolbar">
+  <button data-bp="desktop" class="active">Desktop 1440</button>
+  <button data-bp="tablet">Tablet 810</button>
+  <button data-bp="mobile">Mobile 390</button>
+</div>
+<section><h2>homepage<span class="tmpl-count">1 route</span></h2><div class="grid"><div class="card" data-route="/">
+  <div class="card-head"><span class="route">/</span><span class="count">9 sections</span></div>
+  <img class="wf-img" data-desktop="svg/home__desktop.svg" data-tablet="svg/home__tablet.svg" data-mobile="svg/home__mobile.svg" src="svg/home__desktop.svg" alt="wireframe for /">
+</div></div></section><section><h2>product-page<span class="tmpl-count">11 routes</span></h2><div class="grid"><div class="card" data-route="/ach/">
+  <div class="card-head"><span class="route">/ach/</span><span class="count">7 sections</span></div>
+  <img class="wf-img" data-desktop="svg/ach__desktop.svg" data-tablet="svg/ach__tablet.svg" data-mobile="svg/ach__mobile.svg" src="svg/ach__desktop.svg" alt="wireframe for /ach/">
+</div>
+<div class="card" data-route="/wire/">
+  <div class="card-head"><span class="route">/wire/</span><span class="count">8 sections</span></div>
+  <img class="wf-img" data-desktop="svg/wire__desktop.svg" data-tablet="svg/wire__tablet.svg" data-mobile="svg/wire__mobile.svg" src="svg/wire__desktop.svg" alt="wireframe for /wire/">
+</div>
+<div class="card" data-route="/ledger/">
+  <div class="card-head"><span class="route">/ledger/</span><span class="count">7 sections</span></div>
+  <img class="wf-img" data-desktop="svg/ledger__desktop.svg" data-tablet="svg/ledger__tablet.svg" data-mobile="svg/ledger__mobile.svg" src="svg/ledger__desktop.svg" alt="wireframe for /ledger/">
+</div>
+<div class="card" data-route="/checks/">
+  <div class="card-head"><span class="route">/checks/</span><span class="count">7 sections</span></div>
+  <img class="wf-img" data-desktop="svg/checks__desktop.svg" data-tablet="svg/checks__tablet.svg" data-mobile="svg/checks__mobile.svg" src="svg/checks__desktop.svg" alt="wireframe for /checks/">
+</div>
+<div class="card" data-route="/book-transfers/">
+  <div class="card-head"><span class="route">/book-transfers/</span><span class="count">7 sections</span></div>
+  <img class="wf-img" data-desktop="svg/book-transfers__desktop.svg" data-tablet="svg/book-transfers__tablet.svg" data-mobile="svg/book-transfers__mobile.svg" src="svg/book-transfers__desktop.svg" alt="wireframe for /book-transfers/">
+</div>
+<div class="card" data-route="/card-programs/">
+  <div class="card-head"><span class="route">/card-programs/</span><span class="count">7 sections</span></div>
+  <img class="wf-img" data-desktop="svg/card-programs__desktop.svg" data-tablet="svg/card-programs__tablet.svg" data-mobile="svg/card-programs__mobile.svg" src="svg/card-programs__desktop.svg" alt="wireframe for /card-programs/">
+</div>
+<div class="card" data-route="/bank-accounts/">
+  <div class="card-head"><span class="route">/bank-accounts/</span><span class="count">8 sections</span></div>
+  <img class="wf-img" data-desktop="svg/bank-accounts__desktop.svg" data-tablet="svg/bank-accounts__tablet.svg" data-mobile="svg/bank-accounts__mobile.svg" src="svg/bank-accounts__desktop.svg" alt="wireframe for /bank-accounts/">
+</div>
+<div class="card" data-route="/debt-financing/">
+  <div class="card-head"><span class="route">/debt-financing/</span><span class="count">8 sections</span></div>
+  <img class="wf-img" data-desktop="svg/debt-financing__desktop.svg" data-tablet="svg/debt-financing__tablet.svg" data-mobile="svg/debt-financing__mobile.svg" src="svg/debt-financing__desktop.svg" alt="wireframe for /debt-financing/">
+</div>
+<div class="card" data-route="/loan-origination/">
+  <div class="card-head"><span class="route">/loan-origination/</span><span class="count">6 sections</span></div>
+  <img class="wf-img" data-desktop="svg/loan-origination__desktop.svg" data-tablet="svg/loan-origination__tablet.svg" data-mobile="svg/loan-origination__mobile.svg" src="svg/loan-origination__desktop.svg" alt="wireframe for /loan-origination/">
+</div>
+<div class="card" data-route="/loan-purchase/">
+  <div class="card-head"><span class="route">/loan-purchase/</span><span class="count">6 sections</span></div>
+  <img class="wf-img" data-desktop="svg/loan-purchase__desktop.svg" data-tablet="svg/loan-purchase__tablet.svg" data-mobile="svg/loan-purchase__mobile.svg" src="svg/loan-purchase__desktop.svg" alt="wireframe for /loan-purchase/">
+</div>
+<div class="card" data-route="/international-wires/">
+  <div class="card-head"><span class="route">/international-wires/</span><span class="count">7 sections</span></div>
+  <img class="wf-img" data-desktop="svg/international-wires__desktop.svg" data-tablet="svg/international-wires__tablet.svg" data-mobile="svg/international-wires__mobile.svg" src="svg/international-wires__desktop.svg" alt="wireframe for /international-wires/">
+</div></div></section><section><h2>campaign-product-page<span class="tmpl-count">2 routes</span></h2><div class="grid"><div class="card" data-route="/political-treasury/">
+  <div class="card-head"><span class="route">/political-treasury/</span><span class="count">8 sections</span></div>
+  <img class="wf-img" data-desktop="svg/political-treasury__desktop.svg" data-tablet="svg/political-treasury__tablet.svg" data-mobile="svg/political-treasury__mobile.svg" src="svg/political-treasury__desktop.svg" alt="wireframe for /political-treasury/">
+</div>
+<div class="card" data-route="/title-escrow/">
+  <div class="card-head"><span class="route">/title-escrow/</span><span class="count">8 sections</span></div>
+  <img class="wf-img" data-desktop="svg/title-escrow__desktop.svg" data-tablet="svg/title-escrow__tablet.svg" data-mobile="svg/title-escrow__mobile.svg" src="svg/title-escrow__desktop.svg" alt="wireframe for /title-escrow/">
+</div></div></section><section><h2>narrative-landing-page<span class="tmpl-count">2 routes</span></h2><div class="grid"><div class="card" data-route="/correspondent-banking/">
+  <div class="card-head"><span class="route">/correspondent-banking/</span><span class="count">10 sections</span></div>
+  <img class="wf-img" data-desktop="svg/correspondent-banking__desktop.svg" data-tablet="svg/correspondent-banking__tablet.svg" data-mobile="svg/correspondent-banking__mobile.svg" src="svg/correspondent-banking__desktop.svg" alt="wireframe for /correspondent-banking/">
+</div>
+<div class="card" data-route="/property-management/">
+  <div class="card-head"><span class="route">/property-management/</span><span class="count">11 sections</span></div>
+  <img class="wf-img" data-desktop="svg/property-management__desktop.svg" data-tablet="svg/property-management__tablet.svg" data-mobile="svg/property-management__mobile.svg" src="svg/property-management__desktop.svg" alt="wireframe for /property-management/">
+</div></div></section><section><h2>realtime-page<span class="tmpl-count">1 route</span></h2><div class="grid"><div class="card" data-route="/realtime/">
+  <div class="card-head"><span class="route">/realtime/</span><span class="count">4 sections</span></div>
+  <img class="wf-img" data-desktop="svg/realtime__desktop.svg" data-tablet="svg/realtime__tablet.svg" data-mobile="svg/realtime__mobile.svg" src="svg/realtime__desktop.svg" alt="wireframe for /realtime/">
+</div></div></section><section><h2>protected-deposits-page<span class="tmpl-count">1 route</span></h2><div class="grid"><div class="card" data-route="/protected-deposits/">
+  <div class="card-head"><span class="route">/protected-deposits/</span><span class="count">6 sections</span></div>
+  <img class="wf-img" data-desktop="svg/protected-deposits__desktop.svg" data-tablet="svg/protected-deposits__tablet.svg" data-mobile="svg/protected-deposits__mobile.svg" src="svg/protected-deposits__desktop.svg" alt="wireframe for /protected-deposits/">
+</div></div></section><section><h2>simple-page<span class="tmpl-count">4 routes</span></h2><div class="grid"><div class="card" data-route="/company/">
+  <div class="card-head"><span class="route">/company/</span><span class="count">4 sections</span></div>
+  <img class="wf-img" data-desktop="svg/company__desktop.svg" data-tablet="svg/company__tablet.svg" data-mobile="svg/company__mobile.svg" src="svg/company__desktop.svg" alt="wireframe for /company/">
+</div>
+<div class="card" data-route="/careers/">
+  <div class="card-head"><span class="route">/careers/</span><span class="count">4 sections</span></div>
+  <img class="wf-img" data-desktop="svg/careers__desktop.svg" data-tablet="svg/careers__tablet.svg" data-mobile="svg/careers__mobile.svg" src="svg/careers__desktop.svg" alt="wireframe for /careers/">
+</div>
+<div class="card" data-route="/press/">
+  <div class="card-head"><span class="route">/press/</span><span class="count">2 sections</span></div>
+  <img class="wf-img" data-desktop="svg/press__desktop.svg" data-tablet="svg/press__tablet.svg" data-mobile="svg/press__mobile.svg" src="svg/press__desktop.svg" alt="wireframe for /press/">
+</div>
+<div class="card" data-route="/security/">
+  <div class="card-head"><span class="route">/security/</span><span class="count">4 sections</span></div>
+  <img class="wf-img" data-desktop="svg/security__desktop.svg" data-tablet="svg/security__tablet.svg" data-mobile="svg/security__mobile.svg" src="svg/security__desktop.svg" alt="wireframe for /security/">
+</div></div></section><section><h2>long-form-page<span class="tmpl-count">2 routes</span></h2><div class="grid"><div class="card" data-route="/changelog/">
+  <div class="card-head"><span class="route">/changelog/</span><span class="count">2 sections</span></div>
+  <img class="wf-img" data-desktop="svg/changelog__desktop.svg" data-tablet="svg/changelog__tablet.svg" data-mobile="svg/changelog__mobile.svg" src="svg/changelog__desktop.svg" alt="wireframe for /changelog/">
+</div>
+<div class="card" data-route="/svb-update/">
+  <div class="card-head"><span class="route">/svb-update/</span><span class="count">2 sections</span></div>
+  <img class="wf-img" data-desktop="svg/svb-update__desktop.svg" data-tablet="svg/svb-update__tablet.svg" data-mobile="svg/svb-update__mobile.svg" src="svg/svb-update__desktop.svg" alt="wireframe for /svb-update/">
+</div></div></section><section><h2>blog-index<span class="tmpl-count">1 route</span></h2><div class="grid"><div class="card" data-route="/blog/">
+  <div class="card-head"><span class="route">/blog/</span><span class="count">2 sections</span></div>
+  <img class="wf-img" data-desktop="svg/blog__desktop.svg" data-tablet="svg/blog__tablet.svg" data-mobile="svg/blog__mobile.svg" src="svg/blog__desktop.svg" alt="wireframe for /blog/">
+</div></div></section><section><h2>blog-post<span class="tmpl-count">9 routes</span></h2><div class="grid"><div class="card" data-route="/blog/announcing-column/">
+  <div class="card-head"><span class="route">/blog/announcing-column/</span><span class="count">1 sections</span></div>
+  <img class="wf-img" data-desktop="svg/blog_announcing-column__desktop.svg" data-tablet="svg/blog_announcing-column__tablet.svg" data-mobile="svg/blog_announcing-column__mobile.svg" src="svg/blog_announcing-column__desktop.svg" alt="wireframe for /blog/announcing-column/">
+</div>
+<div class="card" data-route="/blog/co-rate-exportation/">
+  <div class="card-head"><span class="route">/blog/co-rate-exportation/</span><span class="count">2 sections</span></div>
+  <img class="wf-img" data-desktop="svg/blog_co-rate-exportation__desktop.svg" data-tablet="svg/blog_co-rate-exportation__tablet.svg" data-mobile="svg/blog_co-rate-exportation__mobile.svg" src="svg/blog_co-rate-exportation__desktop.svg" alt="wireframe for /blog/co-rate-exportation/">
+</div>
+<div class="card" data-route="/blog/credit-at-column/">
+  <div class="card-head"><span class="route">/blog/credit-at-column/</span><span class="count">2 sections</span></div>
+  <img class="wf-img" data-desktop="svg/blog_credit-at-column__desktop.svg" data-tablet="svg/blog_credit-at-column__tablet.svg" data-mobile="svg/blog_credit-at-column__mobile.svg" src="svg/blog_credit-at-column__desktop.svg" alt="wireframe for /blog/credit-at-column/">
+</div>
+<div class="card" data-route="/blog/debugging-equity/">
+  <div class="card-head"><span class="route">/blog/debugging-equity/</span><span class="count">2 sections</span></div>
+  <img class="wf-img" data-desktop="svg/blog_debugging-equity__desktop.svg" data-tablet="svg/blog_debugging-equity__tablet.svg" data-mobile="svg/blog_debugging-equity__mobile.svg" src="svg/blog_debugging-equity__desktop.svg" alt="wireframe for /blog/debugging-equity/">
+</div>
+<div class="card" data-route="/blog/funding-column/">
+  <div class="card-head"><span class="route">/blog/funding-column/</span><span class="count">2 sections</span></div>
+  <img class="wf-img" data-desktop="svg/blog_funding-column__desktop.svg" data-tablet="svg/blog_funding-column__tablet.svg" data-mobile="svg/blog_funding-column__mobile.svg" src="svg/blog_funding-column__desktop.svg" alt="wireframe for /blog/funding-column/">
+</div>
+<div class="card" data-route="/blog/hiring-at-column/">
+  <div class="card-head"><span class="route">/blog/hiring-at-column/</span><span class="count">2 sections</span></div>
+  <img class="wf-img" data-desktop="svg/blog_hiring-at-column__desktop.svg" data-tablet="svg/blog_hiring-at-column__tablet.svg" data-mobile="svg/blog_hiring-at-column__mobile.svg" src="svg/blog_hiring-at-column__desktop.svg" alt="wireframe for /blog/hiring-at-column/">
+</div>
+<div class="card" data-route="/blog/rebuilding-columns-documentation/">
+  <div class="card-head"><span class="route">/blog/rebuilding-columns-documentation/</span><span class="count">2 sections</span></div>
+  <img class="wf-img" data-desktop="svg/blog_rebuilding-columns-documentation__desktop.svg" data-tablet="svg/blog_rebuilding-columns-documentation__tablet.svg" data-mobile="svg/blog_rebuilding-columns-documentation__mobile.svg" src="svg/blog_rebuilding-columns-documentation__desktop.svg" alt="wireframe for /blog/rebuilding-columns-documentation/">
+</div>
+<div class="card" data-route="/blog/realtime-payments/">
+  <div class="card-head"><span class="route">/blog/realtime-payments/</span><span class="count">1 sections</span></div>
+  <img class="wf-img" data-desktop="svg/blog_realtime-payments__desktop.svg" data-tablet="svg/blog_realtime-payments__tablet.svg" data-mobile="svg/blog_realtime-payments__mobile.svg" src="svg/blog_realtime-payments__desktop.svg" alt="wireframe for /blog/realtime-payments/">
+</div>
+<div class="card" data-route="/blog/test-post/">
+  <div class="card-head"><span class="route">/blog/test-post/</span><span class="count">1 sections</span></div>
+  <img class="wf-img" data-desktop="svg/blog_test-post__desktop.svg" data-tablet="svg/blog_test-post__tablet.svg" data-mobile="svg/blog_test-post__mobile.svg" src="svg/blog_test-post__desktop.svg" alt="wireframe for /blog/test-post/">
+</div></div></section>
+<script>
+document.querySelectorAll('.toolbar button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.toolbar button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const bp = btn.dataset.bp;
+    document.querySelectorAll('.wf-img').forEach(img => {
+      img.src = img.dataset[bp];
+    });
+  });
+});
+</script>
+</body>
+</html>

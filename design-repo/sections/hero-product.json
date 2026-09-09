@@ -1,0 +1,89 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "hero-product",
+  "typeId": "hero-product",
+  "registryId": "section.hero-product",
+  "version": "1.0.0",
+  "category": "hero",
+  "purpose": "Primary hero for a single narrow banking product (ACH, Wire, Ledger, etc.) \u2014 product name, value headline, description, hero visual.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "editorial",
+    "product-focused"
+  ],
+  "measuredFrom": [
+    "/ach/ (550/831/851px)",
+    "/wire/ (632px)",
+    "/ledger/",
+    "/checks/",
+    "/book-transfers/",
+    "/card-programs/",
+    "/bank-accounts/",
+    "/debt-financing/",
+    "/loan-origination/",
+    "/loan-purchase/",
+    "/international-wires/"
+  ],
+  "contentModel": {
+    "required": [
+      "eyebrow (product name, maxWords 3)",
+      "headline (role=display.hero, maxWords 12)",
+      "description (role=body.lg, maxWords 40)",
+      "primaryCta"
+    ],
+    "optional": [
+      "heroVisual (Image)"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "550-866px depending on copy length",
+      "layout": "two-column: text left ~50%, visual right ~50%"
+    },
+    "tablet_810x1080": {
+      "height": "624-1494px",
+      "layout": "stacked, text above visual"
+    },
+    "mobile_390x844": {
+      "height": "795-2159px",
+      "layout": "fully stacked, visual scales to container width"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.fadeUp on headline/description",
+      "entrance.blurSharpen on heroVisual"
+    ],
+    "reducedMotionFallback": "static, no transform/opacity animation"
+  },
+  "compatibility": {
+    "alwaysSecond": true,
+    "followedBy": [
+      "benefit-narrative",
+      "feature-box"
+    ]
+  },
+  "generation": {
+    "componentRefs": [
+      "primitives/Text.json",
+      "primitives/Button.json",
+      "primitives/Image.json"
+    ],
+    "tokenRefs": [
+      "tokens.10-semantic.typography-roles.roles.display.hero",
+      "tokens.10-semantic.color-roles.roles.surface.hero-tint"
+    ]
+  },
+  "accessibility": {
+    "h1": "headline is the page's single h1",
+    "altText": "heroVisual alt required"
+  },
+  "constraints": {
+    "maxInstancesPerPage": 1
+  }
+}

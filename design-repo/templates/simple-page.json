@@ -1,0 +1,31 @@
+{
+  "$schema": "dtai-design-tokens/template",
+  "id": "simple-page",
+  "purpose": "Compact institutional page: short hero + 0-2 content sections. Shared by Company, Careers, Press, and Security.",
+  "measuredRoutes": [
+    "/company/",
+    "/careers/",
+    "/press/",
+    "/security/"
+  ],
+  "nodes": [
+    {
+      "typeId": "site-header",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "hero-simple",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "benefit-narrative",
+      "count": "0-2",
+      "optional": false
+    }
+  ],
+  "notes": [
+    "press has hero-simple only (no body sections beyond the hero); company and careers each add 2 benefit-narrative blocks; security adds 2 shorter ones. No footer landmark was captured as a distinct main>* child on any of these 4 routes \u2014 see README Known Gaps."
+  ]
+}

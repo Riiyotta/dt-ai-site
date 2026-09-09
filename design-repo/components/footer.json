@@ -1,0 +1,27 @@
+{
+  "$schema": "dtai-design-tokens/component",
+  "id": "footer",
+  "composedOf": [
+    "primitives/Text",
+    "primitives/Link",
+    "primitives/Grid"
+  ],
+  "props": {
+    "sitemapColumns": "Grid of Link lists grouped by Products / Company / Developers / Legal",
+    "logo": "footer-logo-mask.svg wordmark"
+  },
+  "measured": {
+    "uses": 34,
+    "as": "746px sitemap footer measured on every route (as the plain 'site-footer' variant) or as the tail of the 1206px 'final-cta-footer' block on product/homepage pages"
+  },
+  "variants": {
+    "plain": {
+      "height": "746px",
+      "usedOn": "campaign pages, narrative pages, simple pages, blog"
+    },
+    "withCta": {
+      "height": "1206px",
+      "usedOn": "product pages, homepage \u2014 a 'Start building today' CTA panel stacked directly above the plain footer"
+    }
+  }
+}

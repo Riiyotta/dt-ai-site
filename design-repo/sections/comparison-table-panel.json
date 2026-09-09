@@ -1,0 +1,57 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "comparison-table-panel",
+  "typeId": "comparison-table-panel",
+  "registryId": "section.comparison-table-panel",
+  "version": "1.0.0",
+  "category": "content",
+  "purpose": "Direct numeric/feature comparison table, e.g. traditional-bank vs DT&AI deposit insurance coverage.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "data-dense"
+  ],
+  "measuredFrom": [
+    "/protected-deposits/ (Section__Wrapper, 785px)"
+  ],
+  "contentModel": {
+    "required": [
+      "columns[2..4]",
+      "rows[]: {label, values[]}"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "785px, side-by-side columns"
+    },
+    "tablet_810x1080": {
+      "height": "~850px"
+    },
+    "mobile_390x844": {
+      "height": "~1400px, stacked rows"
+    }
+  },
+  "motion": {
+    "driven": false
+  },
+  "compatibility": {
+    "compatibleWith": [
+      "benefit-narrative"
+    ]
+  },
+  "generation": {
+    "componentRefs": [
+      "components/comparison-table.json"
+    ],
+    "tokenRefs": []
+  },
+  "accessibility": {
+    "tableSemantics": "real <table> with <th scope> or an ARIA-grid equivalent"
+  },
+  "constraints": {
+    "maxWords": {}
+  }
+}

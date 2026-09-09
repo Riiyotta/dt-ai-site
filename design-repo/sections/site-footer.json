@@ -1,0 +1,61 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "site-footer",
+  "typeId": "site-footer",
+  "registryId": "section.site-footer",
+  "version": "1.0.0",
+  "category": "footer",
+  "purpose": "Plain sitemap footer with no leading CTA headline \u2014 used on campaign, narrative, simple, and blog pages that already have their own contact/CTA section higher up the page.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "minimal",
+    "utility"
+  ],
+  "measuredFrom": [
+    "/political-treasury/ (746px)",
+    "/correspondent-banking/",
+    "/property-management/",
+    "/realtime/",
+    "/protected-deposits/ (absent \u2014 see Known Gaps)"
+  ],
+  "contentModel": {
+    "required": [
+      "footerSitemap: {columns[4]: {title, links[]}}",
+      "logo"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "746px"
+    },
+    "tablet_810x1080": {
+      "height": "~800px"
+    },
+    "mobile_390x844": {
+      "height": "~1400px, stacked"
+    }
+  },
+  "motion": {
+    "driven": false
+  },
+  "compatibility": {
+    "alwaysLast": true,
+    "excludesWith": "final-cta-footer"
+  },
+  "generation": {
+    "componentRefs": [
+      "components/footer.json"
+    ],
+    "tokenRefs": []
+  },
+  "accessibility": {
+    "landmark": "footer"
+  },
+  "constraints": {
+    "maxInstancesPerPage": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "dtai-design-tokens/component",
+  "id": "product-card",
+  "composedOf": [
+    "primitives/Icon",
+    "primitives/Text",
+    "primitives/Link"
+  ],
+  "props": {
+    "icon": "Icon",
+    "title": "Text role=heading.sm, maxWords 3",
+    "description": "Text role=body.sm, maxWords 20",
+    "href": "Link"
+  },
+  "measured": {
+    "uses": "17 instances per related-products-grid (one per DT&AI product) x 12 product-page occurrences"
+  }
+}

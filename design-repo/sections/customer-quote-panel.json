@@ -1,0 +1,74 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "customer-quote-panel",
+  "typeId": "customer-quote-panel",
+  "registryId": "section.customer-quote-panel",
+  "version": "1.0.0",
+  "category": "social-proof",
+  "purpose": "Single large customer testimonial with attribution, placed after the product benefit sections and before the related-products grid.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "editorial",
+    "trust-forward"
+  ],
+  "measuredFrom": [
+    "/ach/ (Box, 620-848px)",
+    "/wire/",
+    "and 9 other standard product pages"
+  ],
+  "contentModel": {
+    "required": [
+      "quote (role=body.lg, maxWords 40)",
+      "attribution (role=label.md, maxWords 6)"
+    ],
+    "optional": [
+      "companyLogo"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "~620px"
+    },
+    "tablet_810x1080": {
+      "height": "~624px"
+    },
+    "mobile_390x844": {
+      "height": "~848px"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.fadeUp"
+    ],
+    "reducedMotionFallback": "static"
+  },
+  "compatibility": {
+    "compatibleWith": [
+      "benefit-narrative"
+    ],
+    "typicallyFollows": "benefit-narrative",
+    "typicallyPrecedes": "related-products-grid"
+  },
+  "generation": {
+    "componentRefs": [
+      "components/testimonial-panel.json"
+    ],
+    "tokenRefs": [
+      "tokens.10-semantic.typography-roles.roles.body.lg"
+    ]
+  },
+  "accessibility": {
+    "blockquote": true
+  },
+  "constraints": {
+    "maxInstancesPerPage": 1,
+    "maxWords": {
+      "quote": 40
+    }
+  }
+}

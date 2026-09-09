@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503 704" width="503" height="704" font-family="Inter, sans-serif">
+<rect x="0" y="0" width="503" height="704" fill="#ffffff" stroke="#c7d0e0"/>
+<rect x="4" y="2.0" width="495" height="17.7" fill="#e8edf7" stroke="#9fb3d9" stroke-width="1"/>
+<text x="12" y="16.0" font-size="9" fill="#1b2a63" font-weight="600">Header__SiteHeader-sc-i83ruj-0</text>
+<text x="495" y="16.0" font-size="8" fill="#8a93a6" text-anchor="end">62px</text>
+<rect x="4" y="23.7" width="495" height="32.0" fill="#dfe7f5" stroke="#9fb3d9" stroke-width="1"/>
+<text x="12" y="37.7" font-size="9" fill="#1b2a63" font-weight="600">social-share</text>
+<text x="12" y="49.7" font-size="8" fill="#57647a">Share</text>
+<text x="495" y="37.7" font-size="8" fill="#8a93a6" text-anchor="end">103px</text>
+<rect x="4" y="59.8" width="495" height="623.2" fill="#eef2fa" stroke="#9fb3d9" stroke-width="1"/>
+<text x="12" y="73.8" font-size="9" fill="#1b2a63" font-weight="600">Container-sc-b2mlwz-0</text>
+<text x="12" y="85.8" font-size="8" fill="#57647a">Blog Home</text>
+<text x="495" y="73.8" font-size="8" fill="#8a93a6" text-anchor="end">1792px</text>
+</svg>

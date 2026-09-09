@@ -1,0 +1,56 @@
+{
+  "$schema": "dtai-design-tokens/layout/grid",
+  "columns": {
+    "cols-1": "repeat(1, minmax(0, 1fr))",
+    "cols-2": "repeat(2, minmax(0, 1fr))",
+    "cols-3": "repeat(3, minmax(0, 1fr))",
+    "cols-4": "repeat(4, minmax(0, 1fr))",
+    "cols-5": "repeat(5, minmax(0, 1fr))",
+    "cols-6": "repeat(6, minmax(0, 1fr))",
+    "cols-7": "repeat(7, minmax(0, 1fr))",
+    "cols-8": "repeat(8, minmax(0, 1fr))",
+    "cols-9": "repeat(9, minmax(0, 1fr))",
+    "cols-10": "repeat(10, minmax(0, 1fr))",
+    "cols-11": "repeat(11, minmax(0, 1fr))",
+    "cols-12": "repeat(12, minmax(0, 1fr))"
+  },
+  "measuredTemplateColumns": [
+    "6px 6px 6px 6px 6px 6px 6px 6px 6px 6px 6px",
+    "89.3281px 89.3281px 89.3281px 89.3281px 89.3281px 89.3281px 89.3281px 89.3281px 89.3281px 89.3281px 89.3281px 89.3281px",
+    "350px",
+    "64.1562px 64.1562px 64.1562px 64.1562px 64.1562px 64.1562px 64.1562px 64.1562px 64.1562px 64.1562px 64.1719px 64.1719px",
+    "64.1562px 64.1562px 64.1562px 64.1562px 64.1562px 64.1562px 64.1562px 64.1562px 64.1562px 64.1562px 64.1562px 64.1562px",
+    "34.8281px 34.8281px 34.8281px 34.8281px 34.8281px 34.8281px 34.8281px 34.8281px 34.8281px 34.8281px 34.8281px 34.8281px",
+    "0px 0px 0px 0px 0px 0px 0px 0px 0px 0px 0px 0px",
+    "60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px",
+    "324px",
+    "526px 526px"
+  ],
+  "gap": {
+    "tight": {
+      "value": "4px",
+      "token": "--space-1",
+      "uses": 1598
+    },
+    "default": {
+      "value": "8px",
+      "token": "--space-2",
+      "uses": 981
+    },
+    "section-item": {
+      "value": "20px",
+      "token": "--space-5",
+      "uses": 587
+    },
+    "card-grid": {
+      "value": "12px",
+      "token": "--space-3",
+      "uses": 458
+    },
+    "loose": {
+      "value": "32px",
+      "token": "--space-8",
+      "uses": 293
+    }
+  }
+}

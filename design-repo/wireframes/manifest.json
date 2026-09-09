@@ -1,0 +1,342 @@
+[
+  {
+    "route": "/loan-origination/",
+    "slug": "loan-origination",
+    "files": {
+      "desktop": "svg/loan-origination__desktop.svg",
+      "tablet": "svg/loan-origination__tablet.svg",
+      "mobile": "svg/loan-origination__mobile.svg"
+    },
+    "sectionCount": 6
+  },
+  {
+    "route": "/blog/test-post/",
+    "slug": "blog_test-post",
+    "files": {
+      "desktop": "svg/blog_test-post__desktop.svg",
+      "tablet": "svg/blog_test-post__tablet.svg",
+      "mobile": "svg/blog_test-post__mobile.svg"
+    },
+    "sectionCount": 1
+  },
+  {
+    "route": "/blog/announcing-column/",
+    "slug": "blog_announcing-column",
+    "files": {
+      "desktop": "svg/blog_announcing-column__desktop.svg",
+      "tablet": "svg/blog_announcing-column__tablet.svg",
+      "mobile": "svg/blog_announcing-column__mobile.svg"
+    },
+    "sectionCount": 1
+  },
+  {
+    "route": "/debt-financing/",
+    "slug": "debt-financing",
+    "files": {
+      "desktop": "svg/debt-financing__desktop.svg",
+      "tablet": "svg/debt-financing__tablet.svg",
+      "mobile": "svg/debt-financing__mobile.svg"
+    },
+    "sectionCount": 8
+  },
+  {
+    "route": "/ledger/",
+    "slug": "ledger",
+    "files": {
+      "desktop": "svg/ledger__desktop.svg",
+      "tablet": "svg/ledger__tablet.svg",
+      "mobile": "svg/ledger__mobile.svg"
+    },
+    "sectionCount": 7
+  },
+  {
+    "route": "/international-wires/",
+    "slug": "international-wires",
+    "files": {
+      "desktop": "svg/international-wires__desktop.svg",
+      "tablet": "svg/international-wires__tablet.svg",
+      "mobile": "svg/international-wires__mobile.svg"
+    },
+    "sectionCount": 7
+  },
+  {
+    "route": "/blog/debugging-equity/",
+    "slug": "blog_debugging-equity",
+    "files": {
+      "desktop": "svg/blog_debugging-equity__desktop.svg",
+      "tablet": "svg/blog_debugging-equity__tablet.svg",
+      "mobile": "svg/blog_debugging-equity__mobile.svg"
+    },
+    "sectionCount": 2
+  },
+  {
+    "route": "/company/",
+    "slug": "company",
+    "files": {
+      "desktop": "svg/company__desktop.svg",
+      "tablet": "svg/company__tablet.svg",
+      "mobile": "svg/company__mobile.svg"
+    },
+    "sectionCount": 4
+  },
+  {
+    "route": "/ach/",
+    "slug": "ach",
+    "files": {
+      "desktop": "svg/ach__desktop.svg",
+      "tablet": "svg/ach__tablet.svg",
+      "mobile": "svg/ach__mobile.svg"
+    },
+    "sectionCount": 7
+  },
+  {
+    "route": "/realtime/",
+    "slug": "realtime",
+    "files": {
+      "desktop": "svg/realtime__desktop.svg",
+      "tablet": "svg/realtime__tablet.svg",
+      "mobile": "svg/realtime__mobile.svg"
+    },
+    "sectionCount": 4
+  },
+  {
+    "route": "/protected-deposits/",
+    "slug": "protected-deposits",
+    "files": {
+      "desktop": "svg/protected-deposits__desktop.svg",
+      "tablet": "svg/protected-deposits__tablet.svg",
+      "mobile": "svg/protected-deposits__mobile.svg"
+    },
+    "sectionCount": 6
+  },
+  {
+    "route": "/blog/realtime-payments/",
+    "slug": "blog_realtime-payments",
+    "files": {
+      "desktop": "svg/blog_realtime-payments__desktop.svg",
+      "tablet": "svg/blog_realtime-payments__tablet.svg",
+      "mobile": "svg/blog_realtime-payments__mobile.svg"
+    },
+    "sectionCount": 1
+  },
+  {
+    "route": "/book-transfers/",
+    "slug": "book-transfers",
+    "files": {
+      "desktop": "svg/book-transfers__desktop.svg",
+      "tablet": "svg/book-transfers__tablet.svg",
+      "mobile": "svg/book-transfers__mobile.svg"
+    },
+    "sectionCount": 7
+  },
+  {
+    "route": "/changelog/",
+    "slug": "changelog",
+    "files": {
+      "desktop": "svg/changelog__desktop.svg",
+      "tablet": "svg/changelog__tablet.svg",
+      "mobile": "svg/changelog__mobile.svg"
+    },
+    "sectionCount": 2
+  },
+  {
+    "route": "/bank-accounts/",
+    "slug": "bank-accounts",
+    "files": {
+      "desktop": "svg/bank-accounts__desktop.svg",
+      "tablet": "svg/bank-accounts__tablet.svg",
+      "mobile": "svg/bank-accounts__mobile.svg"
+    },
+    "sectionCount": 8
+  },
+  {
+    "route": "/title-escrow/",
+    "slug": "title-escrow",
+    "files": {
+      "desktop": "svg/title-escrow__desktop.svg",
+      "tablet": "svg/title-escrow__tablet.svg",
+      "mobile": "svg/title-escrow__mobile.svg"
+    },
+    "sectionCount": 8
+  },
+  {
+    "route": "/",
+    "slug": "home",
+    "files": {
+      "desktop": "svg/home__desktop.svg",
+      "tablet": "svg/home__tablet.svg",
+      "mobile": "svg/home__mobile.svg"
+    },
+    "sectionCount": 9
+  },
+  {
+    "route": "/careers/",
+    "slug": "careers",
+    "files": {
+      "desktop": "svg/careers__desktop.svg",
+      "tablet": "svg/careers__tablet.svg",
+      "mobile": "svg/careers__mobile.svg"
+    },
+    "sectionCount": 4
+  },
+  {
+    "route": "/blog/rebuilding-columns-documentation/",
+    "slug": "blog_rebuilding-columns-documentation",
+    "files": {
+      "desktop": "svg/blog_rebuilding-columns-documentation__desktop.svg",
+      "tablet": "svg/blog_rebuilding-columns-documentation__tablet.svg",
+      "mobile": "svg/blog_rebuilding-columns-documentation__mobile.svg"
+    },
+    "sectionCount": 2
+  },
+  {
+    "route": "/press/",
+    "slug": "press",
+    "files": {
+      "desktop": "svg/press__desktop.svg",
+      "tablet": "svg/press__tablet.svg",
+      "mobile": "svg/press__mobile.svg"
+    },
+    "sectionCount": 2
+  },
+  {
+    "route": "/political-treasury/",
+    "slug": "political-treasury",
+    "files": {
+      "desktop": "svg/political-treasury__desktop.svg",
+      "tablet": "svg/political-treasury__tablet.svg",
+      "mobile": "svg/political-treasury__mobile.svg"
+    },
+    "sectionCount": 8
+  },
+  {
+    "route": "/blog/credit-at-column/",
+    "slug": "blog_credit-at-column",
+    "files": {
+      "desktop": "svg/blog_credit-at-column__desktop.svg",
+      "tablet": "svg/blog_credit-at-column__tablet.svg",
+      "mobile": "svg/blog_credit-at-column__mobile.svg"
+    },
+    "sectionCount": 2
+  },
+  {
+    "route": "/card-programs/",
+    "slug": "card-programs",
+    "files": {
+      "desktop": "svg/card-programs__desktop.svg",
+      "tablet": "svg/card-programs__tablet.svg",
+      "mobile": "svg/card-programs__mobile.svg"
+    },
+    "sectionCount": 7
+  },
+  {
+    "route": "/blog/co-rate-exportation/",
+    "slug": "blog_co-rate-exportation",
+    "files": {
+      "desktop": "svg/blog_co-rate-exportation__desktop.svg",
+      "tablet": "svg/blog_co-rate-exportation__tablet.svg",
+      "mobile": "svg/blog_co-rate-exportation__mobile.svg"
+    },
+    "sectionCount": 2
+  },
+  {
+    "route": "/property-management/",
+    "slug": "property-management",
+    "files": {
+      "desktop": "svg/property-management__desktop.svg",
+      "tablet": "svg/property-management__tablet.svg",
+      "mobile": "svg/property-management__mobile.svg"
+    },
+    "sectionCount": 11
+  },
+  {
+    "route": "/blog/hiring-at-column/",
+    "slug": "blog_hiring-at-column",
+    "files": {
+      "desktop": "svg/blog_hiring-at-column__desktop.svg",
+      "tablet": "svg/blog_hiring-at-column__tablet.svg",
+      "mobile": "svg/blog_hiring-at-column__mobile.svg"
+    },
+    "sectionCount": 2
+  },
+  {
+    "route": "/blog/funding-column/",
+    "slug": "blog_funding-column",
+    "files": {
+      "desktop": "svg/blog_funding-column__desktop.svg",
+      "tablet": "svg/blog_funding-column__tablet.svg",
+      "mobile": "svg/blog_funding-column__mobile.svg"
+    },
+    "sectionCount": 2
+  },
+  {
+    "route": "/checks/",
+    "slug": "checks",
+    "files": {
+      "desktop": "svg/checks__desktop.svg",
+      "tablet": "svg/checks__tablet.svg",
+      "mobile": "svg/checks__mobile.svg"
+    },
+    "sectionCount": 7
+  },
+  {
+    "route": "/wire/",
+    "slug": "wire",
+    "files": {
+      "desktop": "svg/wire__desktop.svg",
+      "tablet": "svg/wire__tablet.svg",
+      "mobile": "svg/wire__mobile.svg"
+    },
+    "sectionCount": 8
+  },
+  {
+    "route": "/svb-update/",
+    "slug": "svb-update",
+    "files": {
+      "desktop": "svg/svb-update__desktop.svg",
+      "tablet": "svg/svb-update__tablet.svg",
+      "mobile": "svg/svb-update__mobile.svg"
+    },
+    "sectionCount": 2
+  },
+  {
+    "route": "/loan-purchase/",
+    "slug": "loan-purchase",
+    "files": {
+      "desktop": "svg/loan-purchase__desktop.svg",
+      "tablet": "svg/loan-purchase__tablet.svg",
+      "mobile": "svg/loan-purchase__mobile.svg"
+    },
+    "sectionCount": 6
+  },
+  {
+    "route": "/blog/",
+    "slug": "blog",
+    "files": {
+      "desktop": "svg/blog__desktop.svg",
+      "tablet": "svg/blog__tablet.svg",
+      "mobile": "svg/blog__mobile.svg"
+    },
+    "sectionCount": 2
+  },
+  {
+    "route": "/security/",
+    "slug": "security",
+    "files": {
+      "desktop": "svg/security__desktop.svg",
+      "tablet": "svg/security__tablet.svg",
+      "mobile": "svg/security__mobile.svg"
+    },
+    "sectionCount": 4
+  },
+  {
+    "route": "/correspondent-banking/",
+    "slug": "correspondent-banking",
+    "files": {
+      "desktop": "svg/correspondent-banking__desktop.svg",
+      "tablet": "svg/correspondent-banking__tablet.svg",
+      "mobile": "svg/correspondent-banking__mobile.svg"
+    },
+    "sectionCount": 10
+  }
+]

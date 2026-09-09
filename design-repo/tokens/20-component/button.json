@@ -1,0 +1,33 @@
+{
+  "$schema": "dtai-design-tokens/component/button",
+  "variants": {
+    "primary": {
+      "background": "tokens.10-semantic.color-roles.roles.surface.hero-dark",
+      "backgroundValue": "--color-blue-800",
+      "text": "tokens.10-semantic.color-roles.roles.text.inverse",
+      "textValue": "--color-white",
+      "radius": "--radii-pill",
+      "radiusMeasured": "9999px",
+      "paddingX": "--space-6",
+      "paddingY": "--space-3",
+      "shadow": "rgb(17, 26, 74) 0px 0px 0px 1px, rgba(0, 0, 0, 0.25) 0px 2px 4px 0px, rgba(0, 0, 0, 0.25) 0px 1px 2px 0px",
+      "measured": {
+        "uses": 189,
+        "as": "'Get started' / 'Sign in' nav CTA, primary hero CTA"
+      }
+    },
+    "secondary": {
+      "background": "--color-white",
+      "text": "--color-blue-800",
+      "border": "--color-gray-300",
+      "radius": "--radii-pill",
+      "paddingX": "--space-6",
+      "paddingY": "--space-3",
+      "measured": {
+        "uses": 96,
+        "as": "secondary nav/hero action"
+      }
+    }
+  },
+  "typography": "tokens.10-semantic.typography-roles.roles.label.md"
+}

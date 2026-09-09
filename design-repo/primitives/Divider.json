@@ -1,0 +1,12 @@
+{
+  "$schema": "dtai-design-tokens/primitive",
+  "id": "Divider",
+  "props": {
+    "color": "ref -> tokens.10-semantic.color-roles.roles.border.default",
+    "orientation": "enum[horizontal,vertical]"
+  },
+  "measured": {
+    "uses": 78,
+    "as": "rgb(207,208,216) hairline borders"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "dtai-design-tokens/component",
+  "id": "testimonial-panel",
+  "composedOf": [
+    "primitives/Text",
+    "primitives/Image"
+  ],
+  "props": {
+    "quote": "Text role=body.lg, maxWords 40",
+    "attribution": "Text role=label.md",
+    "logo": "optional Image"
+  },
+  "measured": {
+    "uses": 396,
+    "as": "customer-quote-panel Box on product pages ('We know the ecosystem very well...')"
+  }
+}

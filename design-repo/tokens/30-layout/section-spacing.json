@@ -1,0 +1,13 @@
+{
+  "$schema": "dtai-design-tokens/layout/section-spacing",
+  "betweenSections": {
+    "desktop": "--space-20",
+    "tablet": "--space-16",
+    "mobile": "--space-12"
+  },
+  "heroToFirstSection": {
+    "desktop": "--space-24",
+    "mobile": "--space-16"
+  },
+  "note": "Derived from measured gap between consecutive main>* section bounding boxes across the 34 routes (see extraction/measured-values.json section_sequences)."
+}

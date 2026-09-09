@@ -1,0 +1,17 @@
+{
+  "$schema": "dtai-design-tokens/component",
+  "id": "faq-item",
+  "composedOf": [
+    "primitives/Text",
+    "primitives/Icon"
+  ],
+  "props": {
+    "question": "Text role=heading.sm, maxWords 14",
+    "answer": "Text role=body.md, maxWords 90",
+    "expandIcon": "Icon",
+    "motion": "reveal.accordionRow"
+  },
+  "measured": {
+    "uses": "5-6 per faq-accordion, seen on protected-deposits"
+  }
+}

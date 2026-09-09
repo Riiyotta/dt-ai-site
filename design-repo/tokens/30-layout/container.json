@@ -1,0 +1,34 @@
+{
+  "$schema": "dtai-design-tokens/layout/container",
+  "maxWidths": {
+    "content": {
+      "value": "1112px",
+      "token": "--screen-lg",
+      "uses": 764
+    },
+    "narrow": {
+      "value": "868.159px",
+      "uses": 349,
+      "note": "measured as a computed fractional value (percentage-derived within a grid), functionally ~= 54.25rem"
+    },
+    "article": {
+      "value": "744.136px",
+      "uses": 284,
+      "note": "blog article body column width"
+    },
+    "form": {
+      "value": "720px",
+      "uses": 278
+    },
+    "wide": {
+      "value": "1280px",
+      "token": "--screen-xl",
+      "uses": 45
+    }
+  },
+  "gutter": {
+    "desktop": "--space-8",
+    "tablet": "--space-6",
+    "mobile": "--space-4"
+  }
+}

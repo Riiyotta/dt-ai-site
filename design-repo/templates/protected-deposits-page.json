@@ -1,0 +1,38 @@
+{
+  "$schema": "dtai-design-tokens/template",
+  "id": "protected-deposits-page",
+  "purpose": "Single-product page with no distinct hero component \u2014 the first benefit-narrative block itself carries the page headline \u2014 followed by a comparison table and a closing FAQ, with no related-products grid or footer captured in this build.",
+  "measuredRoutes": [
+    "/protected-deposits/"
+  ],
+  "nodes": [
+    {
+      "typeId": "site-header",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "benefit-narrative",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "comparison-table-panel",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "benefit-narrative",
+      "count": "2",
+      "optional": false
+    },
+    {
+      "typeId": "faq-accordion",
+      "count": "1",
+      "optional": false
+    }
+  ],
+  "notes": [
+    "protected-deposits is the only measured route with no hero-* or footer-* landmark in its main>* section list (5 Section__Wrapper siblings only) \u2014 see README Known Gaps; a footer is very likely present but was not captured as a distinct main child, possibly rendered outside <main> on this route specifically."
+  ]
+}

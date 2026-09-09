@@ -1,0 +1,33 @@
+{
+  "$schema": "dtai-design-tokens/template",
+  "id": "realtime-page",
+  "purpose": "Single-product page with a bespoke, highly visual two-section body (animated hero + one very tall narrative crop) instead of the standard product-page benefit-narrative repeat. Treated as its own minimal template per the scope guidance rather than forced into product-page.",
+  "measuredRoutes": [
+    "/realtime/"
+  ],
+  "nodes": [
+    {
+      "typeId": "site-header",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "hero-narrative",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "workflow-feature-panel",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "site-footer",
+      "count": "1",
+      "optional": false
+    }
+  ],
+  "notes": [
+    "realtime is the shortest measured section sequence of any product-family route (4 landmarks vs. 6-8 elsewhere) and uses custom 'HeroCrop'/'Crop' components; modeled here as hero-narrative + a single very tall workflow-feature-panel rather than inventing a one-off section type."
+  ]
+}

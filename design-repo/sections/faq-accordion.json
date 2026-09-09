@@ -1,0 +1,67 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "faq-accordion",
+  "typeId": "faq-accordion",
+  "registryId": "section.faq-accordion",
+  "version": "1.0.0",
+  "category": "content",
+  "purpose": "Frequently-asked-questions accordion, seen as the closing section of protected-deposits.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "utility"
+  ],
+  "measuredFrom": [
+    "/protected-deposits/ (Section__Wrapper, 526px)"
+  ],
+  "contentModel": {
+    "required": [
+      "heading (role=heading.xl, maxWords 4)",
+      "items[3..8]: {question (maxWords 14), answer (maxWords 90)}"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "526px collapsed"
+    },
+    "tablet_810x1080": {
+      "height": "~600px"
+    },
+    "mobile_390x844": {
+      "height": "~900px"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "reveal.accordionRow"
+    ],
+    "reducedMotionFallback": "instant show/hide, no max-height transition"
+  },
+  "compatibility": {
+    "typicallyLast": true,
+    "before": [
+      "site-footer",
+      "final-cta-footer"
+    ]
+  },
+  "generation": {
+    "componentRefs": [
+      "components/faq-item.json"
+    ],
+    "tokenRefs": []
+  },
+  "accessibility": {
+    "ariaExpanded": "required on each trigger",
+    "headingLevel": "h2"
+  },
+  "constraints": {
+    "maxWords": {
+      "question": 14,
+      "answer": 90
+    }
+  }
+}

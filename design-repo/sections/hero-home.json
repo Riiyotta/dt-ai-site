@@ -1,0 +1,73 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "hero-home",
+  "typeId": "hero-home",
+  "registryId": "section.hero-home",
+  "version": "1.0.0",
+  "category": "hero",
+  "purpose": "Homepage-only hero: brand statement + platform-level value proposition, wider than any product hero.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "flagship",
+    "brand-forward"
+  ],
+  "measuredFrom": [
+    "/ (880px)"
+  ],
+  "contentModel": {
+    "required": [
+      "brandName",
+      "headline (role=display.hero, maxWords 12)",
+      "description (role=body.lg, maxWords 40)",
+      "primaryCta",
+      "secondaryCta"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "880px"
+    },
+    "tablet_810x1080": {
+      "height": "~1050px"
+    },
+    "mobile_390x844": {
+      "height": "~1300px"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.fadeUp",
+      "decorative.dotShimmer background"
+    ],
+    "reducedMotionFallback": "static dot background, no shimmer"
+  },
+  "compatibility": {
+    "alwaysFirstAfterHeader": true,
+    "onlyOn": [
+      "homepage"
+    ],
+    "followedBy": [
+      "trust-logo-band"
+    ]
+  },
+  "generation": {
+    "componentRefs": [
+      "primitives/Text.json",
+      "primitives/Button.json"
+    ],
+    "tokenRefs": [
+      "tokens.10-semantic.typography-roles.roles.display.hero"
+    ]
+  },
+  "accessibility": {
+    "h1": "headline is the page's single h1"
+  },
+  "constraints": {
+    "maxInstancesPerPage": 1
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "feature-box",
+  "typeId": "feature-box",
+  "registryId": "section.feature-box",
+  "version": "1.0.0",
+  "category": "content",
+  "purpose": "Boxed/bordered feature block (visually distinct from the plain benefit-narrative \u2014 has its own card background), used on campaign pages.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "editorial",
+    "boxed"
+  ],
+  "measuredFrom": [
+    "/political-treasury/ (SectionBox__Wrapper, 754-848px)",
+    "/title-escrow/"
+  ],
+  "contentModel": {
+    "required": [
+      "eyebrow (maxWords 3)",
+      "heading (role=heading.lg, maxWords 10)",
+      "body (role=body.md, maxWords 90)"
+    ],
+    "optional": [
+      "visual"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "754-848px"
+    },
+    "tablet_810x1080": {
+      "height": "scales +10%"
+    },
+    "mobile_390x844": {
+      "height": "scales +50%"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.fadeUp"
+    ],
+    "reducedMotionFallback": "static"
+  },
+  "compatibility": {
+    "repeatable": true,
+    "min": 0,
+    "max": 3,
+    "compatibleWith": [
+      "hero-campaign",
+      "benefit-narrative",
+      "stat-callout-panel"
+    ]
+  },
+  "generation": {
+    "componentRefs": [
+      "primitives/Text.json"
+    ],
+    "tokenRefs": [
+      "tokens.20-component.card"
+    ]
+  },
+  "accessibility": {
+    "headingLevel": "h2"
+  },
+  "constraints": {
+    "maxWords": {
+      "heading": 10,
+      "body": 90
+    }
+  }
+}

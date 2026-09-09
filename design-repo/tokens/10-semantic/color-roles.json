@@ -1,0 +1,119 @@
+{
+  "$schema": "dtai-design-tokens/semantic/color-roles",
+  "generationLayer": true,
+  "roles": {
+    "surface.page": {
+      "ref": "tokens.00-foundation.color.neutrals.white.color",
+      "value": "--color-white",
+      "measured": {
+        "uses": 510,
+        "as": "background-color rgb(255,255,255)"
+      }
+    },
+    "surface.hero-dark": {
+      "ref": "tokens.00-foundation.color.scales.blue.800.color",
+      "value": "--color-blue-800",
+      "measured": {
+        "uses": 272,
+        "as": "background-color rgb(17,26,74) \u2014 homepage/product-hero dark panels"
+      }
+    },
+    "surface.hero-tint": {
+      "ref": "tokens.00-foundation.color.scales.blue.50.color",
+      "value": "--color-blue-50",
+      "measured": {
+        "uses": 432,
+        "as": "background-color rgb(238,244,251) \u2014 light-blue section backgrounds"
+      }
+    },
+    "surface.subtle": {
+      "ref": "tokens.00-foundation.color.neutrals.custom.gray-50",
+      "value": "--color-gray-50",
+      "measured": {
+        "uses": 99,
+        "as": "background-color rgb(246,246,248) \u2014 muted panel fill"
+      }
+    },
+    "surface.raised": {
+      "ref": "tokens.00-foundation.color.neutrals.custom.gray-100",
+      "value": "--color-gray-100",
+      "measured": {
+        "uses": 96,
+        "as": "background-color rgb(238,239,242) \u2014 card/chip fill"
+      }
+    },
+    "surface.accent-seafoam": {
+      "ref": "tokens.00-foundation.color.scales.seafoam.700.color",
+      "value": "--color-seafoam-700",
+      "measured": {
+        "uses": 131,
+        "as": "background-color rgb(22,126,108) \u2014 success/positive accent block (e.g. Protected Deposits, ACH confirmations)"
+      }
+    },
+    "border.default": {
+      "ref": "tokens.00-foundation.color.scales.gray.300.color",
+      "value": "--color-gray-300",
+      "measured": {
+        "uses": 78,
+        "as": "border/divider rgb(207,208,216)"
+      }
+    },
+    "text.primary": {
+      "ref": "tokens.00-foundation.color.scales.blue.800.color",
+      "value": "--color-blue-800",
+      "measured": {
+        "uses": "high (co-occurs with 16/14px 500-600 weight headings)",
+        "as": "heading/emphasis text color rgb(17,26,74) \u2014 the brand's near-black navy, used instead of pure black for most headings"
+      }
+    },
+    "text.body": {
+      "ref": "tokens.00-foundation.color.scales.gray.600.color",
+      "value": "--color-gray-600",
+      "measured": {
+        "uses": 822,
+        "as": "body copy color rgb(87,90,100) \u2014 most frequent single typography+color pairing on the site"
+      }
+    },
+    "text.muted": {
+      "ref": "tokens.00-foundation.color.scales.gray.500.color",
+      "value": "--color-gray-500",
+      "measured": {
+        "uses": 483,
+        "as": "secondary/caption text rgb(124,127,136)"
+      }
+    },
+    "text.inverse": {
+      "ref": "tokens.00-foundation.color.neutrals.white.color",
+      "value": "--color-white",
+      "measured": {
+        "uses": 234,
+        "as": "text on dark surfaces (hero, footer, CTA panels)"
+      }
+    },
+    "text.on-dark-muted": {
+      "ref": "tokens.00-foundation.color.neutrals.rgba-white-50",
+      "value": "rgba(255,255,255,0.5)",
+      "measured": {
+        "uses": 583,
+        "as": "secondary text over dark surfaces \u2014 second most-frequent background/overlay value overall"
+      }
+    },
+    "brand.blue-400": {
+      "ref": "tokens.00-foundation.color.scales.blue.400.color",
+      "value": "--color-blue-400",
+      "measured": {
+        "uses": 13068,
+        "as": "fill color of the repeated halftone/dot decorative pattern (see radius.circle) \u2014 the single most common background-color declaration on the site by a wide margin"
+      }
+    },
+    "accent.orange": {
+      "ref": "tokens.00-foundation.color.scales.orange.600.color",
+      "value": "--color-orange-600",
+      "measured": {
+        "uses": 17,
+        "as": "rare warning/highlight accent, e.g. svb-update page"
+      }
+    }
+  },
+  "note": "Roles are named by function (surface/text/border/brand/accent), each pointing at a full canonical 00-foundation token path plus the raw measured usage count that justified it. Deriving from tokens.css's own --rgb-*/--color-* indirection rather than inventing a parallel palette."
+}

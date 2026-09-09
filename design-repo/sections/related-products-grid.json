@@ -1,0 +1,73 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "related-products-grid",
+  "typeId": "related-products-grid",
+  "registryId": "section.related-products-grid",
+  "version": "1.0.0",
+  "category": "cross-sell",
+  "purpose": "Grid of every DT&AI product (17 tiles), shown near the bottom of every product/campaign page to cross-sell the rest of the platform.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "dense",
+    "grid"
+  ],
+  "measuredFrom": [
+    "/ach/ (1706-4426px)",
+    "/wire/",
+    "and 12 other product/campaign pages"
+  ],
+  "contentModel": {
+    "required": [
+      "eyebrow",
+      "heading (role=heading.xl, maxWords 10)",
+      "products[]: {icon, title (maxWords 3), description (maxWords 20), href}"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "1706px, 3-4 column grid"
+    },
+    "tablet_810x1080": {
+      "height": "2758px, 2-column grid"
+    },
+    "mobile_390x844": {
+      "height": "4426px, 1-column stacked list"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.slideUp per card, staggered"
+    ],
+    "reducedMotionFallback": "static grid, no stagger"
+  },
+  "compatibility": {
+    "compatibleWith": [
+      "customer-quote-panel",
+      "hero-product"
+    ],
+    "typicallyPrecedes": "final-cta-footer"
+  },
+  "generation": {
+    "componentRefs": [
+      "components/product-card.json"
+    ],
+    "tokenRefs": [
+      "tokens.30-layout.grid"
+    ]
+  },
+  "accessibility": {
+    "headingLevel": "h2",
+    "listSemantics": "ul/li for the product grid"
+  },
+  "constraints": {
+    "maxWords": {
+      "title": 3,
+      "description": 20
+    }
+  }
+}

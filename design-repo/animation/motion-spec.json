@@ -1,0 +1,36 @@
+{
+  "$schema": "dtai-design-tokens/animation/motion-spec",
+  "source": "measured transition/animation computed styles + @keyframes CSSOM rules across 34 routes x 3 breakpoints (see extraction/measured-values.json)",
+  "globalReducedMotionRule": "tokens.css ships a global @media (prefers-reduced-motion: reduce) block that forces animation-duration/transition-duration to 0.01ms and scroll-behavior:auto on every element, site-wide. Any section-level motion role documented here must degrade to this baseline, not merely 'disable itself'.",
+  "roles": "see tokens/10-semantic/motion-roles.json for the full role catalog (11 roles) referenced by typeId from every motion-driven section",
+  "keyframeCatalog": {
+    "check": "@keyframes check { 100% { stroke-dashoffset: 0; } }",
+    "scale-pattern-animation-one": "@keyframes scale-pattern-animation-one { 0% {opacity:0} 50% {opacity:1} 100% {opacity:0} }",
+    "scale-pattern-animation-two": "@keyframes scale-pattern-animation-two { 0% {opacity:1} 50% {opacity:0} 100% {opacity:1} }",
+    "background-gradient-animation": "@keyframes background-gradient-animation { 0% {filter:hue-rotate(15deg)} 50% {filter:hue-rotate(-80deg)} 100% {filter:hue-rotate(15deg)} }",
+    "blink": "@keyframes blink { 50% { opacity: 0; } }",
+    "hero-globe-scale": "@keyframes hero-globe-scale { 100% { transform: scale(1); opacity: 1; } }",
+    "ach-show": "@keyframes ach-show { 50% {max-height:92px} 50%,100% {transform:scale(1);opacity:1} 100% {max-height:464px} }",
+    "fadeIn": "@keyframes fadeIn { 100% { opacity: 1; transform: perspective(800px) rotateY(var(--ry)); } }",
+    "fadeInUp": "@keyframes fadeInUp { 0% {opacity:0} 100% {opacity:1} }",
+    "slideUp": "@keyframes slideUp { 0% {transform:translate3d(0,20px,0)} 100% {transform:translate3d(0,0,0)} }",
+    "blurOut": "@keyframes blurOut { 0% {filter:blur(2px)} 100% {filter:blur(0px)} }",
+    "swipe": "@keyframes swipe { 0% {background-position:-100% 0%;opacity:0} 50% {background-position:0% 0%;opacity:1} 100% {background-position:100% 0%;opacity:0} }",
+    "dotFadeOutIn": "@keyframes dotFadeOutIn { 0% {opacity:1;transform:scale(1)} 33%,66% {opacity:var(--dot-inactive-opacity);transform:scale(var(--dot-inactive-scale))} 100% {opacity:1;transform:scale(1)} }"
+  },
+  "durationScale": "no formal token scale exists in the source build; measured cluster points are ~150ms (hover), ~200ms (hover elevation), ~300ms (accordion reveal), ~500-800ms (scroll entrances), 1-8s (ambient/decorative loops)",
+  "stickyScrollSection": {
+    "typeId": "sticky-feature-showcase",
+    "behavior": "position:sticky pins an inner visual while sibling feature rows scroll past",
+    "reducedMotionFallback": "REQUIRED: remove position:sticky, render each feature row with its own static inline visual"
+  },
+  "carousels": [
+    {
+      "typeId": "case-study-carousel",
+      "autoAdvance": "measured but not user-timed precisely; dot indicator uses carousel.dotPulse (2.4s loop)"
+    }
+  ],
+  "decorativeUnhookedFromTokens": {
+    "halftoneDotPattern": "13,507 circular (radius:50%) elements at --color-blue-400, individually shimmering via scale-pattern-animation-one/-two \u2014 the site's signature background motif (see the source build's dot-halftone-*.tsx demo pages). Not exposed as a design token in tokens.css; documented here and in tokens/00-foundation/radius.json."
+  }
+}

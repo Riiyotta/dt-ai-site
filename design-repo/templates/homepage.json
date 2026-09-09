@@ -1,0 +1,58 @@
+{
+  "$schema": "dtai-design-tokens/template",
+  "id": "homepage",
+  "purpose": "The flagship brand + platform landing page.",
+  "measuredRoutes": [
+    "/"
+  ],
+  "nodes": [
+    {
+      "typeId": "site-header",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "hero-home",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "trust-logo-band",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "case-study-carousel",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "code-sample-panel-section",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "infrastructure-feature-grid",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "audience-selector-tabs",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "product-grid-panel",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "final-cta-footer",
+      "count": "1",
+      "optional": false
+    }
+  ],
+  "notes": [
+    "This template is 1-of-1: none of the other 33 routes share its section sequence \u2014 it is the only page using hero-home, trust-logo-band, case-study-carousel, code-sample-panel-section, infrastructure-feature-grid, audience-selector-tabs, or product-grid-panel."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "dtai-design-tokens/template",
+  "id": "blog-post",
+  "purpose": "An individual blog article.",
+  "measuredRoutes": [
+    "/blog/announcing-column/",
+    "/blog/co-rate-exportation/",
+    "/blog/credit-at-column/",
+    "/blog/debugging-equity/",
+    "/blog/funding-column/",
+    "/blog/hiring-at-column/",
+    "/blog/rebuilding-columns-documentation/",
+    "/blog/realtime-payments/",
+    "/blog/test-post/"
+  ],
+  "nodes": [
+    {
+      "typeId": "site-header",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "long-form-content",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "site-footer",
+      "count": "1",
+      "optional": false
+    }
+  ],
+  "notes": [
+    "6 of the 9 posts additionally measured a small 'social-share' bar (103px) between header and the article container; folded into long-form-content's optional socialShare field rather than a separate section type given its minimal footprint.",
+    "Round 3: added the trailing site-footer node. Every measured blog-post route's live build renders a real Footer__ component (confirmed in the served index.html for e.g. /blog/co-rate-exportation/); this template previously ended on long-form-content with no documented reason (unlike the deliberate, documented omission for protected-deposits-page/simple-page in README's Known Gaps section)."
+  ]
+}

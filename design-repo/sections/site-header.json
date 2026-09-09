@@ -1,0 +1,73 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "site-header",
+  "typeId": "site-header",
+  "registryId": "section.site-header",
+  "version": "1.0.0",
+  "category": "navigation",
+  "purpose": "Persistent top navigation shared by every route.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "light",
+    "minimal"
+  ],
+  "measuredFrom": [
+    "/",
+    "/ach/",
+    "/wire/",
+    "and all 34 measured routes (identical DOM on every route)"
+  ],
+  "contentModel": {
+    "required": [
+      "logo",
+      "navLinks[4]",
+      "signInLink",
+      "primaryCta"
+    ],
+    "maxWords": {
+      "navLinks": 2
+    }
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "62px",
+      "layout": "horizontal, logo left, nav center, actions right"
+    },
+    "tablet_810x1080": {
+      "height": "45px",
+      "layout": "same, tighter padding"
+    },
+    "mobile_390x844": {
+      "height": "45px",
+      "layout": "logo left, hamburger menu right (collapses below --screen-nav/870px)"
+    }
+  },
+  "motion": {
+    "driven": false,
+    "hoverOnly": "hover.colorShift on nav links"
+  },
+  "compatibility": {
+    "alwaysFirst": true,
+    "compatibleWith": "*"
+  },
+  "generation": {
+    "componentRefs": [
+      "components/navbar.json"
+    ],
+    "tokenRefs": [
+      "tokens.20-component.nav.header"
+    ]
+  },
+  "accessibility": {
+    "landmark": "header",
+    "keyboardNav": "required, visible focus ring via --form-input-focus-ring"
+  },
+  "constraints": {
+    "maxInstancesPerPage": 1,
+    "required": true
+  }
+}

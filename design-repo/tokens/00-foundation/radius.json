@@ -1,0 +1,22 @@
+{
+  "$schema": "dtai-design-tokens/foundation/radius",
+  "source": "assets/tokens/tokens.css",
+  "scale": {
+    "radii-0": "0",
+    "radii-1": "0.25rem",
+    "radii-sm": "0.25rem",
+    "radii-2": "0.5rem",
+    "radii-4": "1rem",
+    "radii-lg": "1rem",
+    "radii-default": "0.5rem",
+    "radii-pill": "9999px",
+    "radii-round": "9999px",
+    "radii-full": "9999px"
+  },
+  "measuredButUntokenized": {
+    "50%": {
+      "uses": 13507,
+      "note": "Circular decorative dots (the site's halftone/dot-pattern motif \u2014 see pages named dot-halftone-* in the source build) and every avatar/icon-circle. Not a radius scale step; document as --radii-circle = 50% in 10-semantic."
+    }
+  }
+}

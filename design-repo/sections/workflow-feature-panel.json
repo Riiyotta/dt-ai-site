@@ -1,0 +1,79 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "workflow-feature-panel",
+  "typeId": "workflow-feature-panel",
+  "registryId": "section.workflow-feature-panel",
+  "version": "1.0.0",
+  "category": "content",
+  "purpose": "Mid-page narrative feature block on long-form vertical pages \u2014 heading + body + supporting visual, functionally similar to benefit-narrative but scoped to bespoke narrative-page components (_clearing__Section, _team__Section, _workflows__Section, etc).",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "editorial",
+    "long-form"
+  ],
+  "measuredFrom": [
+    "/correspondent-banking/ (_clearing__Section 516px, _team__Section 499px, _lean-ops__Section 578px)",
+    "/property-management/ (_workflows__Section 718px, _trust-compliance__Section 818px)"
+  ],
+  "contentModel": {
+    "required": [
+      "heading (role=heading.lg, maxWords 10)",
+      "body (role=body.md, maxWords 90)"
+    ],
+    "optional": [
+      "visual",
+      "bulletList"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "499-818px"
+    },
+    "tablet_810x1080": {
+      "height": "scales +10-30%"
+    },
+    "mobile_390x844": {
+      "height": "scales +50-100%"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.fadeUp",
+      "entrance.slideUp on visual"
+    ],
+    "reducedMotionFallback": "static"
+  },
+  "compatibility": {
+    "repeatable": true,
+    "min": 0,
+    "max": 5,
+    "compatibleWith": [
+      "hero-narrative",
+      "stats-band",
+      "logo-credentials-band"
+    ]
+  },
+  "generation": {
+    "componentRefs": [
+      "primitives/Text.json",
+      "primitives/Image.json"
+    ],
+    "tokenRefs": [
+      "tokens.10-semantic.typography-roles.roles.heading.lg"
+    ]
+  },
+  "accessibility": {
+    "headingLevel": "h2"
+  },
+  "constraints": {
+    "maxWords": {
+      "heading": 10,
+      "body": 90
+    }
+  }
+}

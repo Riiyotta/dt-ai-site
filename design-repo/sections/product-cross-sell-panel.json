@@ -1,0 +1,66 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "product-cross-sell-panel",
+  "typeId": "product-cross-sell-panel",
+  "registryId": "section.product-cross-sell-panel",
+  "version": "1.0.0",
+  "category": "cross-sell",
+  "purpose": "Cross-sell panel on narrative pages ('Build products on top of your nostro...') \u2014 narrower/more narrative than related-products-grid, still links out to specific DT&AI products.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "editorial",
+    "long-form"
+  ],
+  "measuredFrom": [
+    "/correspondent-banking/ (_products__Section, 1479px)"
+  ],
+  "contentModel": {
+    "required": [
+      "heading (role=heading.xl, maxWords 8)",
+      "body (role=body.md, maxWords 60)",
+      "products[]: {title, href}"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "1479px"
+    },
+    "tablet_810x1080": {
+      "height": "~1700px"
+    },
+    "mobile_390x844": {
+      "height": "~2600px stacked"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.fadeUp"
+    ],
+    "reducedMotionFallback": "static"
+  },
+  "compatibility": {
+    "compatibleWith": [
+      "workflow-feature-panel"
+    ]
+  },
+  "generation": {
+    "componentRefs": [
+      "components/product-card.json"
+    ],
+    "tokenRefs": []
+  },
+  "accessibility": {
+    "headingLevel": "h2"
+  },
+  "constraints": {
+    "maxWords": {
+      "heading": 8,
+      "body": 60
+    }
+  }
+}

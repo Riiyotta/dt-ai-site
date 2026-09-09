@@ -1,0 +1,13 @@
+{
+  "$schema": "dtai-design-tokens/primitive",
+  "id": "Image",
+  "props": {
+    "src": "string (asset path)",
+    "alt": "string, required",
+    "aspectRatio": "ref -> tokens.00-foundation.grid or explicit e.g. 16/9",
+    "loading": "enum[lazy,eager]"
+  },
+  "measured": {
+    "uses": "156 images in assets/images/, hero and product illustrations"
+  }
+}

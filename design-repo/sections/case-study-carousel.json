@@ -1,0 +1,66 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "case-study-carousel",
+  "typeId": "case-study-carousel",
+  "registryId": "section.case-study-carousel",
+  "version": "1.0.0",
+  "category": "social-proof",
+  "purpose": "Homepage-only interactive carousel of customer case studies with animated scenes (account-card, credit-card, domestic/international payment, loan-card, animated-scene).",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "flagship",
+    "motion-heavy"
+  ],
+  "measuredFrom": [
+    "/ (_case-studies__Wrapper, 864px)"
+  ],
+  "contentModel": {
+    "required": [
+      "cards[3..6]: case-study-card"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "864px"
+    },
+    "tablet_810x1080": {
+      "height": "~1000px"
+    },
+    "mobile_390x844": {
+      "height": "~1500px, swipeable single-column"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "carousel.dotPulse for step indicator",
+      "hover.lift on active card"
+    ],
+    "reducedMotionFallback": "static card, no auto-advance, dot indicator uses opacity states without the pulse animation"
+  },
+  "compatibility": {
+    "onlyOn": [
+      "homepage"
+    ],
+    "maxInstancesPerPage": 1
+  },
+  "generation": {
+    "componentRefs": [
+      "components/case-study-card.json"
+    ],
+    "tokenRefs": [
+      "tokens.10-semantic.motion-roles.roles.carousel.dotPulse"
+    ]
+  },
+  "accessibility": {
+    "keyboardNav": "arrow keys / tab between cards",
+    "ariaLive": "polite on auto-advance"
+  },
+  "constraints": {
+    "maxWords": {}
+  }
+}

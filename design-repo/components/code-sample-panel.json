@@ -1,0 +1,16 @@
+{
+  "$schema": "dtai-design-tokens/component",
+  "id": "code-sample-panel",
+  "composedOf": [
+    "primitives/Text"
+  ],
+  "props": {
+    "request": "Text role=code.block",
+    "response": "Text role=code.block",
+    "syntaxColor": "per-token color via tokens.10-semantic.color-roles"
+  },
+  "measured": {
+    "uses": 1,
+    "as": "homepage API request/response demo panel \u2014 the source of the 3,779-use SFMono 12px typography role"
+  }
+}

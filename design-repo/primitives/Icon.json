@@ -1,0 +1,12 @@
+{
+  "$schema": "dtai-design-tokens/primitive",
+  "id": "Icon",
+  "props": {
+    "name": "string (from assets/asset-roles.json icon set)",
+    "size": "enum[16,20,24,32]",
+    "color": "ref -> tokens.10-semantic.color-roles.roles.*"
+  },
+  "measured": {
+    "uses": "product feature bullets, nav, stat callouts"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "hero-campaign",
+  "typeId": "hero-campaign",
+  "registryId": "section.hero-campaign",
+  "version": "1.0.0",
+  "category": "hero",
+  "purpose": "Larger, industry-vertical hero used for regulated/niche verticals (political treasury, title escrow) \u2014 carries more supporting copy and trust signaling than hero-product.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "editorial",
+    "trust-forward"
+  ],
+  "measuredFrom": [
+    "/political-treasury/ (866px)",
+    "/title-escrow/"
+  ],
+  "contentModel": {
+    "required": [
+      "eyebrow (vertical name)",
+      "headline (role=display.hero, maxWords 10)",
+      "description (role=body.lg, maxWords 50)",
+      "primaryCta",
+      "trustBadge (optional, e.g. OCC-regulated)"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "~866px"
+    },
+    "tablet_810x1080": {
+      "height": "~950px, stacked"
+    },
+    "mobile_390x844": {
+      "height": "~1100px, fully stacked"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.fadeUp"
+    ],
+    "reducedMotionFallback": "static"
+  },
+  "compatibility": {
+    "alwaysSecond": true,
+    "followedBy": [
+      "stat-callout-panel",
+      "feature-box"
+    ]
+  },
+  "generation": {
+    "componentRefs": [
+      "primitives/Text.json",
+      "primitives/Button.json",
+      "primitives/Badge.json"
+    ],
+    "tokenRefs": [
+      "tokens.10-semantic.typography-roles.roles.display.hero"
+    ]
+  },
+  "accessibility": {
+    "h1": "headline is the page's single h1"
+  },
+  "constraints": {
+    "maxInstancesPerPage": 1
+  }
+}

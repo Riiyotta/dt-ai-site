@@ -1,0 +1,19 @@
+{
+  "$schema": "dtai-design-tokens/component",
+  "id": "navbar",
+  "composedOf": [
+    "primitives/Text",
+    "primitives/Link",
+    "primitives/Button",
+    "primitives/Icon"
+  ],
+  "props": {
+    "logo": "Link (home)",
+    "links": "Link[5] (Products, Developers, Blog, Company + collapses under --screen-nav)",
+    "actions": "[Link 'Sign in', Button 'Get started' variant=primary]"
+  },
+  "measured": {
+    "uses": 34,
+    "as": "identical 62px header on every one of the 34 measured routes; collapses to a hamburger menu below 870px (--screen-nav)"
+  }
+}

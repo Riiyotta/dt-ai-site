@@ -1,0 +1,12 @@
+{
+  "$schema": "dtai-design-tokens/primitive",
+  "id": "Grid",
+  "props": {
+    "columns": "ref -> tokens.00-foundation.grid.columns.*",
+    "gap": "ref -> tokens.30-layout.grid.gap.*",
+    "responsiveColumns": "{desktop, tablet, mobile}"
+  },
+  "measured": {
+    "uses": "related-products grid, stats band, FAQ grid"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "dtai-design-tokens/component",
+  "id": "case-study-card",
+  "composedOf": [
+    "primitives/Image",
+    "primitives/Text",
+    "primitives/Badge"
+  ],
+  "props": {
+    "logo": "Image (customer logo)",
+    "quote": "Text role=body.lg, maxWords 30",
+    "stat": "optional Badge",
+    "scene": "one of: account-card, animated-scene, credit-card, domestic-payment, international-payment, loan-card"
+  },
+  "measured": {
+    "uses": 1,
+    "as": "homepage case-studies__Wrapper carousel; the 6 index-case-studies-*.tsx bundles are the interactive scenes rendered inside this single homepage carousel component, not separate pages (confirmed: /index-case-studies-*/ resolves to the byte-identical homepage via the SPA fallback, not a distinct route)"
+  }
+}

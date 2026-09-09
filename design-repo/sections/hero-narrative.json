@@ -1,0 +1,72 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "hero-narrative",
+  "typeId": "hero-narrative",
+  "registryId": "section.hero-narrative",
+  "version": "1.0.0",
+  "category": "hero",
+  "purpose": "Long-form B2B sales-narrative hero opening a multi-section vertical landing page (Correspondent Banking, Property Management, Realtime).",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "long-form",
+    "sales-narrative"
+  ],
+  "measuredFrom": [
+    "/correspondent-banking/ (838px)",
+    "/property-management/ (651px)",
+    "/realtime/ (1242px, bespoke 'HeroCrop')"
+  ],
+  "contentModel": {
+    "required": [
+      "category (e.g. 'Correspondent Banking', 'Vertical Solutions')",
+      "headline (role=display.hero, maxWords 10)",
+      "description (role=body.lg, maxWords 45)",
+      "primaryCta"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "651-1242px"
+    },
+    "tablet_810x1080": {
+      "height": "scales +15-30%"
+    },
+    "mobile_390x844": {
+      "height": "scales +60-120%, fully stacked"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.fadeUp",
+      "decorative.gradientHue on realtime's animated background"
+    ],
+    "reducedMotionFallback": "static background, no hue-rotate"
+  },
+  "compatibility": {
+    "alwaysSecond": true,
+    "followedBy": [
+      "stats-band",
+      "workflow-feature-panel"
+    ]
+  },
+  "generation": {
+    "componentRefs": [
+      "primitives/Text.json",
+      "primitives/Button.json"
+    ],
+    "tokenRefs": [
+      "tokens.10-semantic.typography-roles.roles.display.hero"
+    ]
+  },
+  "accessibility": {
+    "h1": "headline is the page's single h1"
+  },
+  "constraints": {
+    "maxInstancesPerPage": 1
+  }
+}

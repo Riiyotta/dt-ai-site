@@ -1,0 +1,33 @@
+{
+  "$schema": "dtai-design-tokens/component/input",
+  "background": {
+    "token": "--form-input-bg",
+    "value": "var(--color-0)"
+  },
+  "border": {
+    "token": "--form-input-border",
+    "value": "var(--color-gray-300)"
+  },
+  "borderHover": {
+    "token": "--form-input-border-hover",
+    "value": "var(--color-gray-500)"
+  },
+  "borderFocus": {
+    "token": "--form-input-border-focus",
+    "value": "var(--color-blue-600)"
+  },
+  "focusRing": {
+    "token": "--form-input-focus-ring",
+    "value": "var(--color-blue-100)"
+  },
+  "placeholder": {
+    "token": "--form-placeholder-text",
+    "value": "var(--color-gray-500)"
+  },
+  "label": {
+    "token": "--form-label",
+    "value": "var(--color-gray-900)"
+  },
+  "radius": "--radii-1",
+  "note": "Taken directly from tokens.css --form-* declarations (source-authored form tokens, not re-derived)."
+}

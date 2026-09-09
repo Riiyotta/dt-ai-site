@@ -1,0 +1,16 @@
+{
+  "$schema": "dtai-design-tokens/component",
+  "id": "logo-band",
+  "composedOf": [
+    "primitives/Image",
+    "primitives/Text"
+  ],
+  "props": {
+    "eyebrow": "optional Badge",
+    "logos": "Image[]"
+  },
+  "measured": {
+    "uses": 2,
+    "as": "homepage 'TRUSTED AT SCALE' band, property-management _logos__Section 'Powering the fintech tools you already use'"
+  }
+}

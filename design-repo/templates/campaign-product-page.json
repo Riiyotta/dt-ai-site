@@ -1,0 +1,49 @@
+{
+  "$schema": "dtai-design-tokens/template",
+  "id": "campaign-product-page",
+  "purpose": "A heavier, industry-vertical product template for regulated/niche verticals \u2014 bigger hero, boxed feature sections, stat callout, contact form instead of a related-products grid.",
+  "measuredRoutes": [
+    "/political-treasury/",
+    "/title-escrow/"
+  ],
+  "nodes": [
+    {
+      "typeId": "site-header",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "hero-campaign",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "stat-callout-panel",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "feature-box",
+      "count": "2",
+      "optional": false
+    },
+    {
+      "typeId": "benefit-narrative",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "contact-form-panel",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "site-footer",
+      "count": "1",
+      "optional": false
+    }
+  ],
+  "notes": [
+    "political-treasury and title-escrow are the only 2 of the 17 product-family routes that share this spine \u2014 measured section-for-section identical (both: header, hero-campaign, Container-stat, SectionBox, Section, SectionBox, Container-contact, footer)."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "dtai-design-tokens/component/nav",
+  "header": {
+    "height": "62px",
+    "measured": {
+      "uses": 34,
+      "as": "site header height, identical on every one of the 34 measured routes"
+    },
+    "background": "--color-white",
+    "border": "--color-gray-200",
+    "collapseBreakpoint": "--screen-nav",
+    "collapseBreakpointValue": "870px",
+    "linkTypography": "tokens.10-semantic.typography-roles.roles.label.md"
+  }
+}

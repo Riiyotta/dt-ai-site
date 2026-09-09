@@ -1,0 +1,347 @@
+{
+  "$schema": "dtai-design-tokens/compatibility-graph",
+  "rules": {
+    "alwaysFirst": [
+      "site-header"
+    ],
+    "alwaysLast": [
+      "final-cta-footer",
+      "site-footer"
+    ],
+    "alwaysLastUnless": [
+      "protected-deposits-page",
+      "simple-page"
+    ],
+    "mutuallyExclusive": [
+      [
+        "final-cta-footer",
+        "site-footer"
+      ]
+    ],
+    "heroTypes": [
+      "hero-product",
+      "hero-campaign",
+      "hero-narrative",
+      "hero-simple",
+      "hero-home"
+    ],
+    "heroMustFollowHeader": true,
+    "maxOnePerPage": [
+      "site-header",
+      "hero-product",
+      "hero-campaign",
+      "hero-narrative",
+      "hero-simple",
+      "hero-home",
+      "customer-quote-panel",
+      "related-products-grid",
+      "final-cta-footer",
+      "site-footer",
+      "dashboard-preview-panel",
+      "sticky-feature-showcase",
+      "case-study-carousel",
+      "code-sample-panel-section",
+      "infrastructure-feature-grid",
+      "audience-selector-tabs",
+      "product-grid-panel",
+      "long-form-content",
+      "blog-index-grid",
+      "comparison-table-panel",
+      "faq-accordion"
+    ],
+    "onlyOnHomepage": [
+      "hero-home",
+      "trust-logo-band",
+      "case-study-carousel",
+      "code-sample-panel-section",
+      "infrastructure-feature-grid",
+      "audience-selector-tabs",
+      "product-grid-panel"
+    ],
+    "onlyOnChangelogOrSvbUpdateOrBlogPost": [
+      "long-form-content"
+    ],
+    "onlyOnBlogIndex": [
+      "blog-index-grid"
+    ]
+  },
+  "adjacency": {
+    "site-header": {
+      "canPrecede": [
+        "hero-product",
+        "hero-campaign",
+        "hero-narrative",
+        "hero-simple",
+        "hero-home",
+        "benefit-narrative",
+        "long-form-content",
+        "blog-index-grid"
+      ]
+    },
+    "hero-product": {
+      "canPrecede": [
+        "benefit-narrative",
+        "customer-quote-panel"
+      ]
+    },
+    "hero-campaign": {
+      "canPrecede": [
+        "stat-callout-panel",
+        "feature-box"
+      ]
+    },
+    "hero-narrative": {
+      "canPrecede": [
+        "stats-band",
+        "workflow-feature-panel"
+      ]
+    },
+    "hero-simple": {
+      "canPrecede": [
+        "benefit-narrative"
+      ]
+    },
+    "hero-home": {
+      "canPrecede": [
+        "trust-logo-band"
+      ]
+    },
+    "benefit-narrative": {
+      "canPrecede": [
+        "benefit-narrative",
+        "customer-quote-panel",
+        "feature-box",
+        "comparison-table-panel",
+        "faq-accordion",
+        "contact-form-panel"
+      ],
+      "canFollow": [
+        "hero-product",
+        "hero-campaign",
+        "hero-simple",
+        "benefit-narrative",
+        "feature-box"
+      ]
+    },
+    "customer-quote-panel": {
+      "canPrecede": [
+        "related-products-grid"
+      ],
+      "canFollow": [
+        "benefit-narrative"
+      ]
+    },
+    "related-products-grid": {
+      "canPrecede": [
+        "final-cta-footer"
+      ],
+      "canFollow": [
+        "customer-quote-panel"
+      ]
+    },
+    "stat-callout-panel": {
+      "canPrecede": [
+        "feature-box"
+      ],
+      "canFollow": [
+        "hero-campaign"
+      ]
+    },
+    "feature-box": {
+      "canPrecede": [
+        "feature-box",
+        "benefit-narrative",
+        "contact-form-panel"
+      ],
+      "canFollow": [
+        "hero-campaign",
+        "stat-callout-panel",
+        "feature-box"
+      ]
+    },
+    "contact-form-panel": {
+      "canPrecede": [
+        "site-footer"
+      ],
+      "canFollow": [
+        "feature-box",
+        "workflow-feature-panel",
+        "product-cross-sell-panel"
+      ]
+    },
+    "stats-band": {
+      "canPrecede": [
+        "logo-credentials-band",
+        "workflow-feature-panel"
+      ],
+      "canFollow": [
+        "hero-narrative"
+      ]
+    },
+    "logo-credentials-band": {
+      "canPrecede": [
+        "workflow-feature-panel"
+      ],
+      "canFollow": [
+        "stats-band"
+      ]
+    },
+    "workflow-feature-panel": {
+      "canPrecede": [
+        "workflow-feature-panel",
+        "dashboard-preview-panel",
+        "sticky-feature-showcase",
+        "product-cross-sell-panel",
+        "contact-form-panel",
+        "site-footer"
+      ],
+      "canFollow": [
+        "hero-narrative",
+        "logo-credentials-band",
+        "workflow-feature-panel"
+      ]
+    },
+    "dashboard-preview-panel": {
+      "canPrecede": [
+        "sticky-feature-showcase",
+        "contact-form-panel"
+      ],
+      "canFollow": [
+        "workflow-feature-panel"
+      ]
+    },
+    "sticky-feature-showcase": {
+      "canPrecede": [
+        "contact-form-panel",
+        "product-cross-sell-panel"
+      ],
+      "canFollow": [
+        "dashboard-preview-panel",
+        "workflow-feature-panel"
+      ]
+    },
+    "product-cross-sell-panel": {
+      "canPrecede": [
+        "contact-form-panel"
+      ],
+      "canFollow": [
+        "workflow-feature-panel"
+      ]
+    },
+    "comparison-table-panel": {
+      "canPrecede": [
+        "benefit-narrative",
+        "faq-accordion"
+      ],
+      "canFollow": [
+        "benefit-narrative"
+      ]
+    },
+    "faq-accordion": {
+      "canPrecede": [
+        "site-footer",
+        "final-cta-footer"
+      ],
+      "canFollow": [
+        "benefit-narrative",
+        "comparison-table-panel"
+      ]
+    },
+    "trust-logo-band": {
+      "canPrecede": [
+        "case-study-carousel"
+      ],
+      "canFollow": [
+        "hero-home"
+      ]
+    },
+    "case-study-carousel": {
+      "canPrecede": [
+        "code-sample-panel-section"
+      ],
+      "canFollow": [
+        "trust-logo-band"
+      ]
+    },
+    "code-sample-panel-section": {
+      "canPrecede": [
+        "infrastructure-feature-grid"
+      ],
+      "canFollow": [
+        "case-study-carousel"
+      ]
+    },
+    "infrastructure-feature-grid": {
+      "canPrecede": [
+        "audience-selector-tabs"
+      ],
+      "canFollow": [
+        "code-sample-panel-section"
+      ]
+    },
+    "audience-selector-tabs": {
+      "canPrecede": [
+        "product-grid-panel"
+      ],
+      "canFollow": [
+        "infrastructure-feature-grid"
+      ]
+    },
+    "product-grid-panel": {
+      "canPrecede": [
+        "final-cta-footer"
+      ],
+      "canFollow": [
+        "audience-selector-tabs"
+      ]
+    },
+    "final-cta-footer": {
+      "canPrecede": [],
+      "canFollow": [
+        "related-products-grid",
+        "product-grid-panel",
+        "faq-accordion"
+      ]
+    },
+    "site-footer": {
+      "canPrecede": [],
+      "canFollow": [
+        "contact-form-panel",
+        "faq-accordion",
+        "workflow-feature-panel",
+        "long-form-content",
+        "blog-index-grid"
+      ]
+    },
+    "long-form-content": {
+      "canPrecede": [
+        "site-footer"
+      ],
+      "canFollow": [
+        "site-header"
+      ]
+    },
+    "blog-index-grid": {
+      "canPrecede": [
+        "site-footer"
+      ],
+      "canFollow": [
+        "site-header"
+      ]
+    }
+  },
+  "rhythm": {
+    "minSectionsPerPage": 2,
+    "maxConsecutiveSameType": {
+      "benefit-narrative": 3,
+      "workflow-feature-panel": 5,
+      "feature-box": 3
+    },
+    "heroRequiredUnless": [
+      "long-form-page",
+      "blog-index",
+      "blog-post",
+      "protected-deposits-page"
+    ]
+  }
+}

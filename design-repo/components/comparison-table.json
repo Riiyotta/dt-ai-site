@@ -1,0 +1,16 @@
+{
+  "$schema": "dtai-design-tokens/component",
+  "id": "comparison-table",
+  "composedOf": [
+    "primitives/Text",
+    "primitives/Grid"
+  ],
+  "props": {
+    "columns": "Text[] column headers (e.g. 'Traditional banks', 'DT&AI')",
+    "rows": "[{label, values: Text[]}]"
+  },
+  "measured": {
+    "uses": 1,
+    "as": "protected-deposits 'Traditional banks $250,000 / DT&AI $3,500,000+' block"
+  }
+}

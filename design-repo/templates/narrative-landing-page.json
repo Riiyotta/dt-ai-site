@@ -1,0 +1,65 @@
+{
+  "$schema": "dtai-design-tokens/template",
+  "id": "narrative-landing-page",
+  "purpose": "Long-form B2B sales narrative for a specific customer segment \u2014 many bespoke mid-page sections stitched around a shared hero/stats/contact/footer shell. Each of the 2 routes using this template has a distinct bespoke section sequence in the middle; only the shell nodes are shared.",
+  "measuredRoutes": [
+    "/correspondent-banking/",
+    "/property-management/"
+  ],
+  "nodes": [
+    {
+      "typeId": "site-header",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "hero-narrative",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "stats-band",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "logo-credentials-band",
+      "count": "1",
+      "optional": true
+    },
+    {
+      "typeId": "workflow-feature-panel",
+      "count": "2-5",
+      "optional": false
+    },
+    {
+      "typeId": "dashboard-preview-panel",
+      "count": "1",
+      "optional": true
+    },
+    {
+      "typeId": "sticky-feature-showcase",
+      "count": "1",
+      "optional": true
+    },
+    {
+      "typeId": "product-cross-sell-panel",
+      "count": "1",
+      "optional": true
+    },
+    {
+      "typeId": "contact-form-panel",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "site-footer",
+      "count": "1",
+      "optional": false
+    }
+  ],
+  "notes": [
+    "This is a 'flexible spine' template, not a fixed one: correspondent-banking and property-management are each bespoke long-form pages that share the shell (header/hero-narrative/stats-band/contact-form-panel/site-footer) but differ in which optional mid-page sections they include and how many workflow-feature-panel instances they use.",
+    "Given the scope-guidance to not over-invest in one-off pages, the bespoke mid-page sections are modeled as the general-purpose workflow-feature-panel/dashboard-preview-panel/sticky-feature-showcase/product-cross-sell-panel/logo-credentials-band types rather than a distinct component per page."
+  ]
+}

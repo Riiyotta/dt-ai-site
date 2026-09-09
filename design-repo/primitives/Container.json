@@ -1,0 +1,12 @@
+{
+  "$schema": "dtai-design-tokens/primitive",
+  "id": "Container",
+  "props": {
+    "maxWidth": "ref -> tokens.30-layout.container.maxWidths.*",
+    "gutter": "ref -> tokens.30-layout.container.gutter"
+  },
+  "measured": {
+    "uses": 764,
+    "as": "1112px content container, the site's dominant wrapper width"
+  }
+}

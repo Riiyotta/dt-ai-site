@@ -1,0 +1,69 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "audience-selector-tabs",
+  "typeId": "audience-selector-tabs",
+  "registryId": "section.audience-selector-tabs",
+  "version": "1.0.0",
+  "category": "content",
+  "purpose": "Homepage-only tabbed 'DT&AI for [audience]' selector (Technology companies, US Banks, International Banks, Real Estate...).",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "flagship",
+    "interactive"
+  ],
+  "measuredFrom": [
+    "/ (_column_for__Wrapper, 816px)"
+  ],
+  "contentModel": {
+    "required": [
+      "eyebrow",
+      "tabs[3..6]: {label (maxWords 3), heading (maxWords 8), body (maxWords 40)}"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "816px"
+    },
+    "tablet_810x1080": {
+      "height": "~950px"
+    },
+    "mobile_390x844": {
+      "height": "~1300px, tabs become an accordion"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "hover.colorShift on tab triggers",
+      "entrance.fadeUp on panel switch"
+    ],
+    "reducedMotionFallback": "instant panel switch, no fade"
+  },
+  "compatibility": {
+    "onlyOn": [
+      "homepage"
+    ],
+    "maxInstancesPerPage": 1
+  },
+  "generation": {
+    "componentRefs": [
+      "primitives/Text.json"
+    ],
+    "tokenRefs": []
+  },
+  "accessibility": {
+    "ariaRole": "tablist/tab/tabpanel",
+    "keyboardNav": "arrow keys between tabs"
+  },
+  "constraints": {
+    "maxWords": {
+      "label": 3,
+      "heading": 8,
+      "body": 40
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "$schema": "dtai-design-tokens/semantic/motion-roles",
+  "generationLayer": true,
+  "roles": {
+    "entrance.fadeUp": {
+      "keyframe": "fadeInUp",
+      "duration": "600ms",
+      "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "measuredDurations": [
+        "0.2s",
+        "0.15s",
+        "0.75s, 0.4s",
+        "0.2s, 0.2s, 0.2s",
+        "0.2s, 0.2s",
+        "0.1s"
+      ],
+      "usage": "default scroll-into-view entrance for section headings and cards"
+    },
+    "entrance.slideUp": {
+      "keyframe": "slideUp",
+      "duration": "500ms",
+      "easing": "ease-out",
+      "usage": "panel/card slide-in on scroll (product feature cards, related-products grid)"
+    },
+    "entrance.blurSharpen": {
+      "keyframe": "blurOut",
+      "duration": "800ms",
+      "easing": "ease-out",
+      "usage": "hero product imagery sharpening in on load"
+    },
+    "hover.lift": {
+      "property": "transform, box-shadow",
+      "duration": "200ms",
+      "easing": "ease",
+      "usage": "card/button hover elevation change"
+    },
+    "hover.colorShift": {
+      "property": "background-color, color, border-color",
+      "duration": "150ms",
+      "easing": "ease",
+      "usage": "link/button hover color transitions \u2014 the most common transition on the site"
+    },
+    "decorative.dotShimmer": {
+      "keyframe": "scale-pattern-animation-one / -two",
+      "duration": "3s",
+      "easing": "ease-in-out",
+      "iteration": "infinite",
+      "usage": "background halftone-dot pattern ambient shimmer (paired opposite-phase pair)"
+    },
+    "decorative.gradientHue": {
+      "keyframe": "background-gradient-animation",
+      "duration": "8s",
+      "easing": "ease-in-out",
+      "iteration": "infinite",
+      "usage": "animated hue-rotate on hero gradient backgrounds"
+    },
+    "indicator.blink": {
+      "keyframe": "blink",
+      "duration": "1s",
+      "easing": "step-end",
+      "iteration": "infinite",
+      "usage": "live/cursor blink indicator in code sample panel"
+    },
+    "reveal.accordionRow": {
+      "keyframe": "ach-show",
+      "duration": "300ms",
+      "easing": "ease-in-out",
+      "usage": "expand/collapse row (ACH returns UI, FAQ accordion)"
+    },
+    "carousel.dotPulse": {
+      "keyframe": "dotFadeOutIn",
+      "duration": "2.4s",
+      "easing": "ease-in-out",
+      "iteration": "infinite",
+      "usage": "carousel/case-study step indicator pulsing"
+    },
+    "sticky.scrollLinked": {
+      "property": "position: sticky",
+      "usage": "property-management _features__StickySection \u2014 content pins while an inner panel advances.",
+      "reducedMotionCaveat": "VERIFIED INACCURATE CLAIM CORRECTED (Round 3): this role's `position: sticky` behavior is NOT disabled under prefers-reduced-motion in the live build. Checked directly against the served bundle (component---src-pages-property-management-tsx-*.js): there is no `matchMedia`/JS-level reduced-motion check anywhere in it, and none of its several `@media (prefers-reduced-motion: reduce)` CSS blocks touch the `position:sticky` declaration -- they only reset transform/opacity/transition on unrelated decorative layers. The global tokens.css 0.01ms animation/transition-duration collapse (see reducedMotionFallback below) cannot affect `position` either, since position is not an animatable duration/transition property. The only thing that actually disables the sticky pin is a viewport-width breakpoint on mobile (an unrelated responsive fallback, not a motion-preference one). sections/sticky-feature-showcase.json previously claimed this was 'REQUIRED \u2014 static stacked layout (position:sticky removed)' under reduced motion; that description was not measured against real behavior and has been corrected to flag this as an open accessibility gap rather than a shipped fallback."
+    }
+  },
+  "reducedMotionFallback": "Every role above must resolve to the global tokens.css @media (prefers-reduced-motion: reduce) block: animation-duration/transition-duration forced to 0.01ms, scroll-behavior:auto. Any generated section using a motion role must set reducedMotionFallback per schema/pagespec.schema.json. VERIFIED against the served build's assets/tokens/tokens.css (Round 3) -- the block's four declarations match exactly. Note this mechanism can only ever affect animation/transition timing; it cannot alter a persistent layout property like `position: sticky` (see sticky.scrollLinked's reducedMotionCaveat above) -- any role relying on a non-animation CSS property needs its own explicit override to have a real reduced-motion fallback."
+}

@@ -1,0 +1,70 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "final-cta-footer",
+  "typeId": "final-cta-footer",
+  "registryId": "section.final-cta-footer",
+  "version": "1.0.0",
+  "category": "footer",
+  "purpose": "Combined bottom-of-page CTA ('Start building today') stacked directly above the sitemap footer. Used on product pages and the homepage.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "flagship",
+    "conversion-focused"
+  ],
+  "measuredFrom": [
+    "/ach/ (1206/1182/2159px, 'relative overflow-hidden')",
+    "/ (same component, _closer__HoverWrapper)"
+  ],
+  "contentModel": {
+    "required": [
+      "ctaHeadline (role=heading.xl, maxWords 6)",
+      "ctaDescription (role=body.lg, maxWords 30)",
+      "primaryCta",
+      "footerSitemap: {columns[4]: {title, links[]}}"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "1206px"
+    },
+    "tablet_810x1080": {
+      "height": "1182px"
+    },
+    "mobile_390x844": {
+      "height": "2159px, fully stacked"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "hover.lift on the CTA panel"
+    ],
+    "reducedMotionFallback": "static"
+  },
+  "compatibility": {
+    "alwaysLast": true,
+    "excludesWith": "site-footer (mutually exclusive \u2014 a page has one or the other, never both)"
+  },
+  "generation": {
+    "componentRefs": [
+      "components/footer.json"
+    ],
+    "tokenRefs": [
+      "tokens.10-semantic.typography-roles.roles.heading.xl"
+    ]
+  },
+  "accessibility": {
+    "landmark": "footer",
+    "headingLevel": "h2"
+  },
+  "constraints": {
+    "maxInstancesPerPage": 1,
+    "maxWords": {
+      "ctaHeadline": 6
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "benefit-narrative",
+  "typeId": "benefit-narrative",
+  "registryId": "section.benefit-narrative",
+  "version": "1.0.0",
+  "category": "content",
+  "purpose": "A single feature/benefit block: eyebrow + heading + body copy, usually paired with a supporting visual. Repeats 1-3x on a standard product page.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "editorial",
+    "flexible"
+  ],
+  "measuredFrom": [
+    "/ach/ (2 instances, 443px/883px)",
+    "/wire/ (3 instances)",
+    "/company/",
+    "/careers/",
+    "/security/",
+    "/protected-deposits/ (repeats as the page's entire body)"
+  ],
+  "contentModel": {
+    "required": [
+      "eyebrow (optional, maxWords 4)",
+      "heading (role=heading.lg, maxWords 12)",
+      "body (role=body.lg, maxWords 60)"
+    ],
+    "optional": [
+      "visual (Image)",
+      "bulletList"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "443-1706px, varies by copy+visual"
+    },
+    "tablet_810x1080": {
+      "height": "scales +10-70%"
+    },
+    "mobile_390x844": {
+      "height": "scales +40-160%, stacked"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.fadeUp",
+      "entrance.slideUp on visual"
+    ],
+    "reducedMotionFallback": "static"
+  },
+  "compatibility": {
+    "repeatable": true,
+    "min": 0,
+    "max": 4,
+    "compatibleWith": [
+      "hero-product",
+      "hero-campaign",
+      "hero-simple",
+      "feature-box"
+    ]
+  },
+  "generation": {
+    "componentRefs": [
+      "primitives/Text.json",
+      "primitives/Image.json"
+    ],
+    "tokenRefs": [
+      "tokens.10-semantic.typography-roles.roles.heading.lg",
+      "tokens.10-semantic.typography-roles.roles.body.lg"
+    ]
+  },
+  "accessibility": {
+    "headingLevel": "h2"
+  },
+  "constraints": {
+    "maxWords": {
+      "heading": 12,
+      "body": 60
+    }
+  }
+}

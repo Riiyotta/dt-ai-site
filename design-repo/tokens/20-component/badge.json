@@ -1,0 +1,21 @@
+{
+  "$schema": "dtai-design-tokens/component/badge",
+  "variants": {
+    "eyebrow": {
+      "typography": "tokens.10-semantic.typography-roles.roles.body.eyebrow",
+      "textTransform": "uppercase",
+      "measured": {
+        "uses": 1890,
+        "as": "the light 300-weight 14px label above nearly every section heading ('TRUSTED AT SCALE', 'INFRASTRUCTURE', 'PRODUCTS')"
+      }
+    },
+    "statusDot": {
+      "radius": "--radii-round",
+      "size": "8px",
+      "measured": {
+        "uses": 13507,
+        "as": "the circular halftone-dot decorative motif and small status indicators"
+      }
+    }
+  }
+}

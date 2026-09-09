@@ -1,0 +1,50 @@
+{
+  "$schema": "dtai-design-tokens/assets/asset-roles",
+  "roles": {
+    "logo.wordmark": {
+      "path": "assets/footer-logo-mask.svg",
+      "usage": "site wordmark (site-header and final-cta-footer/site-footer logo, CSS mask-image)"
+    },
+    "typography.sans": {
+      "path": "assets/typography/ (Inter 400/500/600 woff2)",
+      "license": "SIL OFL"
+    },
+    "typography.mono": {
+      "path": "assets/typography/ (JetBrains Mono 400/500 woff2)",
+      "license": "SIL OFL"
+    },
+    "hero.illustration": {
+      "path": "assets/images/ (per-product hero art)",
+      "usage": "hero-product / hero-campaign / hero-narrative heroVisual"
+    },
+    "product.icon": {
+      "path": "assets/images/ (product/feature icon set)",
+      "usage": "product-card icon, benefit-narrative visual, related-products-grid icon"
+    },
+    "case-study.scene": {
+      "path": "assets/images/index/case-studies/",
+      "usage": "case-study-carousel animated scene backgrounds (account-card, credit-card, domestic-payment, international-payment, loan-card, animated-scene)"
+    },
+    "customer.logo": {
+      "path": "assets/images/ (customer/partner logo marks)",
+      "usage": "trust-logo-band, logo-credentials-band, testimonial-panel"
+    },
+    "changelog.clip": {
+      "path": "assets/clips/ (12 MP4s, ~1.7GB)",
+      "usage": "product/changelog feature demo video, referenced from long-form-content"
+    },
+    "blog.author": {
+      "path": "assets/ryanbot.jpg",
+      "usage": "author headshot photo \u2014 not currently wired to any PageSpec-authorable field; blog-post-card.author and long-form-content.author are both plain text (no image prop exists on either component/section for this asset). Flagged for design follow-up: either add an avatar image field to both, or retire this asset if author photos were never shipped."
+    },
+    "dashboard.screenshot": {
+      "path": "assets/images/ (product UI screenshots)",
+      "usage": "dashboard-preview-panel"
+    },
+    "blog.thumbnail": {
+      "path": "assets/images/blog/ (per-post thumbnail)",
+      "usage": "blog-post-card optional thumbnail image"
+    }
+  },
+  "note": "This is a ROLE registry (what each asset group is used FOR in the section/component contracts above), not a raw file listing \u2014 see assets/README.md and the source build's own assets/README.md for the full 156-image / 12-clip file catalog."
+}

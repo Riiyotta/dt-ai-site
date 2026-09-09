@@ -1,0 +1,12 @@
+{
+  "$schema": "dtai-design-tokens/primitive",
+  "id": "Badge",
+  "props": {
+    "variant": "ref -> tokens.20-component.badge.variants.*",
+    "label": "string, maxWords 4"
+  },
+  "measured": {
+    "uses": 1890,
+    "as": "section eyebrow labels"
+  }
+}

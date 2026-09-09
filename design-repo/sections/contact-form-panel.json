@@ -1,0 +1,75 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "contact-form-panel",
+  "typeId": "contact-form-panel",
+  "registryId": "section.contact-form-panel",
+  "version": "1.0.0",
+  "category": "conversion",
+  "purpose": "Bottom-of-page contact/lead form ('Contact us', 'Let's chat') on campaign and narrative pages, in place of the product page's related-products grid.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "conversion-focused"
+  ],
+  "measuredFrom": [
+    "/political-treasury/ (Container, 936px)",
+    "/correspondent-banking/ (_contact__Section, 1040px)",
+    "/property-management/ (_contact__Section, 992px)"
+  ],
+  "contentModel": {
+    "required": [
+      "heading (role=heading.xl, maxWords 4)",
+      "description (role=body.md, maxWords 30)",
+      "fields[]: Field"
+    ],
+    "optional": [
+      "companyLogos"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "936-1040px, two-column (copy + form)"
+    },
+    "tablet_810x1080": {
+      "height": "stacked"
+    },
+    "mobile_390x844": {
+      "height": "fully stacked"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.fadeUp"
+    ],
+    "reducedMotionFallback": "static"
+  },
+  "compatibility": {
+    "typicallyLast": true,
+    "before": [
+      "site-footer"
+    ]
+  },
+  "generation": {
+    "componentRefs": [
+      "primitives/Field.json",
+      "primitives/Button.json"
+    ],
+    "tokenRefs": [
+      "tokens.20-component.input"
+    ]
+  },
+  "accessibility": {
+    "formLabels": "required, associated via <label for>",
+    "headingLevel": "h2"
+  },
+  "constraints": {
+    "maxWords": {
+      "heading": 4,
+      "description": 30
+    }
+  }
+}

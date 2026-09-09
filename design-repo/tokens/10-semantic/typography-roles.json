@@ -1,0 +1,189 @@
+{
+  "$schema": "dtai-design-tokens/semantic/typography-roles",
+  "generationLayer": true,
+  "roles": {
+    "code.inline": {
+      "fontFamily": "--font-mono",
+      "fontSize": "--text-100",
+      "fontSizeMeasured": "12px",
+      "fontWeight": "400",
+      "lineHeight": "18px",
+      "letterSpacing": null,
+      "defaultColor": "--color-orange-300",
+      "measured": {
+        "uses": 3779
+      },
+      "maxWords": 20
+    },
+    "body.eyebrow": {
+      "fontFamily": "--font-sans",
+      "fontSize": "--text-200",
+      "fontSizeMeasured": "14px",
+      "fontWeight": "300",
+      "lineHeight": "21px",
+      "letterSpacing": null,
+      "defaultColor": "--color-gray-500",
+      "measured": {
+        "uses": 1890
+      },
+      "maxWords": 4
+    },
+    "body.lg": {
+      "fontFamily": "--font-sans",
+      "fontSize": "--text-300",
+      "fontSizeMeasured": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": null,
+      "defaultColor": "--color-gray-600",
+      "measured": {
+        "uses": 912
+      },
+      "maxWords": 60
+    },
+    "heading.sm": {
+      "fontFamily": "--font-sans",
+      "fontSize": "--text-300",
+      "fontSizeMeasured": "16px",
+      "fontWeight": "500",
+      "lineHeight": "20px",
+      "letterSpacing": "-0.16px",
+      "defaultColor": "--color-gray-700",
+      "measured": {
+        "uses": 717
+      },
+      "maxWords": 16
+    },
+    "body.md": {
+      "fontFamily": "--font-sans",
+      "fontSize": "--text-200",
+      "fontSizeMeasured": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "letterSpacing": null,
+      "defaultColor": "--color-gray-600",
+      "measured": {
+        "uses": 687
+      },
+      "maxWords": 90
+    },
+    "label.md": {
+      "fontFamily": "--font-sans",
+      "fontSize": "--text-200",
+      "fontSizeMeasured": "14px",
+      "fontWeight": "500",
+      "lineHeight": "20px",
+      "letterSpacing": null,
+      "defaultColor": "--color-1000",
+      "measured": {
+        "uses": 462
+      },
+      "maxWords": 6
+    },
+    "label.sm": {
+      "fontFamily": "--font-sans",
+      "fontSize": "--text-100",
+      "fontSizeMeasured": "12px",
+      "fontWeight": "500",
+      "lineHeight": "18px",
+      "letterSpacing": null,
+      "defaultColor": "--color-1000",
+      "measured": {
+        "uses": 327
+      },
+      "maxWords": 6
+    },
+    "body.sm": {
+      "fontFamily": "--font-sans",
+      "fontSize": "--text-100",
+      "fontSizeMeasured": "12px",
+      "fontWeight": "400",
+      "lineHeight": "18px",
+      "letterSpacing": null,
+      "defaultColor": "--color-gray-400",
+      "measured": {
+        "uses": 256
+      },
+      "maxWords": 40
+    },
+    "code.block": {
+      "fontFamily": "--font-mono",
+      "fontSize": "--text-200",
+      "fontSizeMeasured": "14px",
+      "fontWeight": "400",
+      "lineHeight": "16px",
+      "letterSpacing": null,
+      "defaultColor": "--color-blue-800",
+      "measured": {
+        "uses": 228
+      },
+      "maxWords": 200
+    },
+    "heading.md": {
+      "fontFamily": "--font-sans",
+      "fontSize": "--text-300",
+      "fontSizeMeasured": "16px",
+      "fontWeight": "600",
+      "lineHeight": "20px",
+      "letterSpacing": "-0.16px",
+      "defaultColor": "--color-blue-800",
+      "measured": {
+        "uses": 183
+      },
+      "maxWords": 14
+    },
+    "heading.lg": {
+      "fontFamily": "--font-sans",
+      "fontSize": "--text-400",
+      "fontSizeMeasured": "20px",
+      "fontWeight": "600",
+      "lineHeight": "24px",
+      "letterSpacing": "-0.2px",
+      "defaultColor": "--color-blue-800",
+      "measured": {
+        "uses": 173
+      },
+      "maxWords": 12
+    },
+    "heading.xl": {
+      "fontFamily": "--font-sans",
+      "fontSize": "--text-700",
+      "fontSizeMeasured": "36px",
+      "fontWeight": "600",
+      "lineHeight": "40px",
+      "letterSpacing": "-0.36px",
+      "defaultColor": "--color-gray-900",
+      "measured": {
+        "uses": 131
+      },
+      "maxWords": 10
+    },
+    "label.on-dark": {
+      "fontFamily": "--font-sans",
+      "fontSize": "--text-200",
+      "fontSizeMeasured": "14px",
+      "fontWeight": "600",
+      "lineHeight": "21px",
+      "letterSpacing": null,
+      "defaultColor": "--color-0",
+      "measured": {
+        "uses": 128
+      },
+      "maxWords": 40
+    },
+    "body.intro": {
+      "fontFamily": "--font-sans",
+      "fontSize": "--text-350",
+      "fontSizeMeasured": "18px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": null,
+      "defaultColor": "--color-blue-800",
+      "measured": {
+        "uses": 36
+      },
+      "maxWords": 35
+    }
+  },
+  "note": "Role names are functional (display/heading/body/label/code tiers), not raw pixel sizes. maxWords is a p90 word-count budget derived from the measured text length of sections that actually use each role (see extraction/measured-values.json); it is a generation ceiling, not a hard CSS constraint."
+}

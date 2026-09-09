@@ -1,0 +1,65 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "code-sample-panel-section",
+  "typeId": "code-sample-panel-section",
+  "registryId": "section.code-sample-panel-section",
+  "version": "1.0.0",
+  "category": "product-demo",
+  "purpose": "Homepage-only live API request/response demo panel.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "flagship",
+    "product-demo"
+  ],
+  "measuredFrom": [
+    "/ (Container, 846px)"
+  ],
+  "contentModel": {
+    "required": [
+      "request (role=code.block)",
+      "response (role=code.block)"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "846px, side-by-side"
+    },
+    "tablet_810x1080": {
+      "height": "~950px"
+    },
+    "mobile_390x844": {
+      "height": "~1300px stacked"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "indicator.blink on the cursor"
+    ],
+    "reducedMotionFallback": "static cursor, no blink"
+  },
+  "compatibility": {
+    "onlyOn": [
+      "homepage"
+    ],
+    "maxInstancesPerPage": 1
+  },
+  "generation": {
+    "componentRefs": [
+      "components/code-sample-panel.json"
+    ],
+    "tokenRefs": [
+      "tokens.10-semantic.typography-roles.roles.code.block"
+    ]
+  },
+  "accessibility": {
+    "codeBlockLabel": "aria-label describing the request being demonstrated"
+  },
+  "constraints": {
+    "maxWords": {}
+  }
+}

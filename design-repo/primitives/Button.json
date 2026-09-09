@@ -1,0 +1,15 @@
+{
+  "$schema": "dtai-design-tokens/primitive",
+  "id": "Button",
+  "props": {
+    "variant": "ref -> tokens.20-component.button.variants.*",
+    "size": "enum[md,sm]",
+    "label": "string, maxWords 4",
+    "href": "string | onClick",
+    "icon": "optional Icon primitive"
+  },
+  "measured": {
+    "uses": 189,
+    "as": "nav CTA, hero CTA, form submit"
+  }
+}

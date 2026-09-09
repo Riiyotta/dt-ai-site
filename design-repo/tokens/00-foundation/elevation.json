@@ -1,0 +1,30 @@
+{
+  "$schema": "dtai-design-tokens/foundation/elevation",
+  "source": "assets/tokens/tokens.css + measured box-shadow values across 34 routes",
+  "tokenized": {
+    "shadow-product": "0px 40px 32px rgba(0,0,0,0.02),0px 22px 18px rgba(0,0,0,0.03),0px 12px 10px rgba(0,0,0,0.03),0px 7px 5px rgba(0,0,0,0.04),0px 3px 2px rgba(0,0,0,0.07)",
+    "shadow-product-border": "0 0 0 1px rgba(0,0,0,0.05)"
+  },
+  "measuredUntokenized": [
+    {
+      "value": "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.05) 0px 1px 3px 0px",
+      "uses": 396,
+      "role": "card / panel resting elevation (hairline border + soft drop)"
+    },
+    {
+      "value": "rgb(17, 26, 74) 0px 0px 0px 1px, rgba(0, 0, 0, 0.25) 0px 2px 4px 0px, rgba(0, 0, 0, 0.25) 0px 1px 2px 0px",
+      "uses": 189,
+      "role": "primary button / dark control elevation"
+    },
+    {
+      "value": "rgba(255, 255, 255, 0) 0px 1px 1px 0px, rgba(87, 90, 100, 0.12) 0px 0px 0px 1px",
+      "uses": 184,
+      "role": "input / form-field resting border"
+    },
+    {
+      "value": "rgba(30, 65, 153, 0.12) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 4px 8px 0px",
+      "uses": 102,
+      "role": "focused / hovered interactive-panel elevation"
+    }
+  ]
+}

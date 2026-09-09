@@ -1,0 +1,62 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "blog-index-grid",
+  "typeId": "blog-index-grid",
+  "registryId": "section.blog-index-grid",
+  "version": "1.0.0",
+  "category": "editorial",
+  "purpose": "Grid/list of blog-post-card entries on the blog index page.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "editorial",
+    "grid"
+  ],
+  "measuredFrom": [
+    "/blog/ (Container, 2118px)"
+  ],
+  "contentModel": {
+    "required": [
+      "posts[]: blog-post-card"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "2118px, 3-column"
+    },
+    "tablet_810x1080": {
+      "height": "~2600px, 2-column"
+    },
+    "mobile_390x844": {
+      "height": "~4500px, 1-column"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.fadeUp per card"
+    ],
+    "reducedMotionFallback": "static"
+  },
+  "compatibility": {
+    "onlyOn": [
+      "blog-index"
+    ],
+    "maxInstancesPerPage": 1
+  },
+  "generation": {
+    "componentRefs": [
+      "components/blog-post-card.json"
+    ],
+    "tokenRefs": []
+  },
+  "accessibility": {
+    "headingLevel": "h1 page title, h3 per card title"
+  },
+  "constraints": {
+    "maxWords": {}
+  }
+}

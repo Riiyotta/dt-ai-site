@@ -1,0 +1,69 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "sticky-feature-showcase",
+  "typeId": "sticky-feature-showcase",
+  "registryId": "section.sticky-feature-showcase",
+  "version": "1.0.0",
+  "category": "content",
+  "purpose": "Scroll-linked sticky panel: a fixed visual pins in the viewport while a sequence of feature callouts advance past it. The tallest measured section on the site.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "motion-heavy",
+    "product-demo"
+  ],
+  "measuredFrom": [
+    "/property-management/ (_features__StickySection, 3568px desktop)"
+  ],
+  "contentModel": {
+    "required": [
+      "heading (role=heading.xl, maxWords 6)",
+      "features[3..5]: {title (maxWords 6), body (maxWords 40)}"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "3568px, sticky visual + scrolling feature list"
+    },
+    "tablet_810x1080": {
+      "height": "~4200px"
+    },
+    "mobile_390x844": {
+      "height": "~5000px, sticky behavior disabled, plain stack"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "sticky.scrollLinked"
+    ],
+    "reducedMotionFallback": "NOT ACTUALLY IMPLEMENTED in the measured build (corrected Round 3 \u2014 see tokens/10-semantic/motion-roles.json's sticky.scrollLinked.reducedMotionCaveat for the verification). The live property-management bundle has no matchMedia/JS reduced-motion check and no CSS override that removes position:sticky under prefers-reduced-motion; the pin persists regardless of the user's motion preference. A generated page using this section should not claim a static-stacked reduced-motion fallback exists today \u2014 this is flagged as an open accessibility gap for the component owner, not something to silently invent a value for."
+  },
+  "compatibility": {
+    "maxInstancesPerPage": 1,
+    "compatibleWith": [
+      "dashboard-preview-panel"
+    ]
+  },
+  "generation": {
+    "componentRefs": [
+      "primitives/Text.json",
+      "primitives/Image.json"
+    ],
+    "tokenRefs": []
+  },
+  "accessibility": {
+    "headingLevel": "h2",
+    "note": "sticky positioning must not trap scroll or keyboard focus"
+  },
+  "constraints": {
+    "maxWords": {
+      "heading": 6,
+      "featureTitle": 6,
+      "featureBody": 40
+    }
+  }
+}

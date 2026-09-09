@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 503 1112" width="503" height="1112" font-family="Inter, sans-serif">
+<rect x="0" y="0" width="503" height="1112" fill="#ffffff" stroke="#c7d0e0"/>
+<rect x="4" y="2.0" width="495" height="17.7" fill="#e8edf7" stroke="#9fb3d9" stroke-width="1"/>
+<text x="12" y="16.0" font-size="9" fill="#1b2a63" font-weight="600">Header__SiteHeader-sc-i83ruj-0</text>
+<text x="495" y="16.0" font-size="8" fill="#8a93a6" text-anchor="end">62px</text>
+<rect x="4" y="23.7" width="495" height="298.4" fill="#dfe7f5" stroke="#9fb3d9" stroke-width="1"/>
+<text x="12" y="37.7" font-size="9" fill="#1b2a63" font-weight="600">Hero__Wrapper-sc-183prpo-0</text>
+<text x="12" y="49.7" font-size="8" fill="#57647a">Company</text>
+<text x="495" y="37.7" font-size="8" fill="#8a93a6" text-anchor="end">864px</text>
+<rect x="4" y="326.1" width="495" height="490.2" fill="#eef2fa" stroke="#9fb3d9" stroke-width="1"/>
+<text x="12" y="340.1" font-size="9" fill="#1b2a63" font-weight="600">Section__Wrapper-sc-16nsdlg-0</text>
+<text x="12" y="352.1" font-size="8" fill="#57647a">Financial services have changed, are cha</text>
+<text x="495" y="340.1" font-size="8" fill="#8a93a6" text-anchor="end">1412px</text>
+<rect x="4" y="820.3" width="495" height="269.7" fill="#e3ebf9" stroke="#9fb3d9" stroke-width="1"/>
+<text x="12" y="834.3" font-size="9" fill="#1b2a63" font-weight="600">Section__Wrapper-sc-16nsdlg-0</text>
+<text x="12" y="846.3" font-size="8" fill="#57647a">We have fun here!</text>
+<text x="495" y="834.3" font-size="8" fill="#8a93a6" text-anchor="end">782px</text>
+</svg>

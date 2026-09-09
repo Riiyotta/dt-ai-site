@@ -1,0 +1,640 @@
+{
+  "$schema": "dtai-design-tokens/foundation/color",
+  "source": "assets/tokens/tokens.css (434 lines, 373 declarations)",
+  "channels": "rgb",
+  "scales": {
+    "purple": {
+      "50": {
+        "rgb": "--rgb-purple-50",
+        "value": "247,241,254",
+        "color": "--color-purple-50",
+        "colorValue": "rgba(var(--rgb-purple-50),1)"
+      },
+      "100": {
+        "rgb": "--rgb-purple-100",
+        "value": "234,225,248",
+        "color": "--color-purple-100",
+        "colorValue": "rgba(var(--rgb-purple-100),1)"
+      },
+      "200": {
+        "rgb": "--rgb-purple-200",
+        "value": "213,200,241",
+        "color": "--color-purple-200",
+        "colorValue": "rgba(var(--rgb-purple-200),1)"
+      },
+      "300": {
+        "rgb": "--rgb-purple-300",
+        "value": "193,170,241",
+        "color": "--color-purple-300",
+        "colorValue": "rgba(var(--rgb-purple-300),1)"
+      },
+      "400": {
+        "rgb": "--rgb-purple-400",
+        "value": "159,122,238",
+        "color": "--color-purple-400",
+        "colorValue": "rgba(var(--rgb-purple-400),1)"
+      },
+      "500": {
+        "rgb": "--rgb-purple-500",
+        "value": "132,94,219",
+        "color": "--color-purple-500",
+        "colorValue": "rgba(var(--rgb-purple-500),1)"
+      },
+      "600": {
+        "rgb": "--rgb-purple-600",
+        "value": "82,31,167",
+        "color": "--color-purple-600",
+        "colorValue": "rgba(var(--rgb-purple-600),1)"
+      },
+      "700": {
+        "rgb": "--rgb-purple-700",
+        "value": "60,25,119",
+        "color": "--color-purple-700",
+        "colorValue": "rgba(var(--rgb-purple-700),1)"
+      },
+      "800": {
+        "rgb": "--rgb-purple-800",
+        "value": "34,7,78",
+        "color": "--color-purple-800",
+        "colorValue": "rgba(var(--rgb-purple-800),1)"
+      },
+      "900": {
+        "rgb": "--rgb-purple-900",
+        "value": "22,6,48",
+        "color": "--color-purple-900",
+        "colorValue": "rgba(var(--rgb-purple-900),1)"
+      }
+    },
+    "blue": {
+      "50": {
+        "rgb": "--rgb-blue-50",
+        "value": "238,244,251",
+        "color": "--color-blue-50",
+        "colorValue": "rgba(var(--rgb-blue-50),1)"
+      },
+      "100": {
+        "rgb": "--rgb-blue-100",
+        "value": "212,227,247",
+        "color": "--color-blue-100",
+        "colorValue": "rgba(var(--rgb-blue-100),1)"
+      },
+      "200": {
+        "rgb": "--rgb-blue-200",
+        "value": "196,214,242",
+        "color": "--color-blue-200",
+        "colorValue": "rgba(var(--rgb-blue-200),1)"
+      },
+      "300": {
+        "rgb": "--rgb-blue-300",
+        "value": "162,193,237",
+        "color": "--color-blue-300",
+        "colorValue": "rgba(var(--rgb-blue-300),1)"
+      },
+      "400": {
+        "rgb": "--rgb-blue-400",
+        "value": "126,167,233",
+        "color": "--color-blue-400",
+        "colorValue": "rgba(var(--rgb-blue-400),1)"
+      },
+      "500": {
+        "rgb": "--rgb-blue-500",
+        "value": "69,117,205",
+        "color": "--color-blue-500",
+        "colorValue": "rgba(var(--rgb-blue-500),1)"
+      },
+      "600": {
+        "rgb": "--rgb-blue-600",
+        "value": "30,65,153",
+        "color": "--color-blue-600",
+        "colorValue": "rgba(var(--rgb-blue-600),1)"
+      },
+      "700": {
+        "rgb": "--rgb-blue-700",
+        "value": "27,45,112",
+        "color": "--color-blue-700",
+        "colorValue": "rgba(var(--rgb-blue-700),1)"
+      },
+      "800": {
+        "rgb": "--rgb-blue-800",
+        "value": "17,26,74",
+        "color": "--color-blue-800",
+        "colorValue": "rgba(var(--rgb-blue-800),1)"
+      },
+      "900": {
+        "rgb": "--rgb-blue-900",
+        "value": "8,11,50",
+        "color": "--color-blue-900",
+        "colorValue": "rgba(var(--rgb-blue-900),1)"
+      }
+    },
+    "cyan": {
+      "50": {
+        "rgb": "--rgb-cyan-50",
+        "value": "238,247,249",
+        "color": "--color-cyan-50",
+        "colorValue": "rgba(var(--rgb-cyan-50),1)"
+      },
+      "100": {
+        "rgb": "--rgb-cyan-100",
+        "value": "219,239,243",
+        "color": "--color-cyan-100",
+        "colorValue": "rgba(var(--rgb-cyan-100),1)"
+      },
+      "200": {
+        "rgb": "--rgb-cyan-200",
+        "value": "193,232,239",
+        "color": "--color-cyan-200",
+        "colorValue": "rgba(var(--rgb-cyan-200),1)"
+      },
+      "300": {
+        "rgb": "--rgb-cyan-300",
+        "value": "171,230,238",
+        "color": "--color-cyan-300",
+        "colorValue": "rgba(var(--rgb-cyan-300),1)"
+      },
+      "400": {
+        "rgb": "--rgb-cyan-400",
+        "value": "136,222,235",
+        "color": "--color-cyan-400",
+        "colorValue": "rgba(var(--rgb-cyan-400),1)"
+      },
+      "500": {
+        "rgb": "--rgb-cyan-500",
+        "value": "113,210,240",
+        "color": "--color-cyan-500",
+        "colorValue": "rgba(var(--rgb-cyan-500),1)"
+      },
+      "600": {
+        "rgb": "--rgb-cyan-600",
+        "value": "47,143,197",
+        "color": "--color-cyan-600",
+        "colorValue": "rgba(var(--rgb-cyan-600),1)"
+      },
+      "700": {
+        "rgb": "--rgb-cyan-700",
+        "value": "12,105,151",
+        "color": "--color-cyan-700",
+        "colorValue": "rgba(var(--rgb-cyan-700),1)"
+      },
+      "800": {
+        "rgb": "--rgb-cyan-800",
+        "value": "2,50,71",
+        "color": "--color-cyan-800",
+        "colorValue": "rgba(var(--rgb-cyan-800),1)"
+      },
+      "900": {
+        "rgb": "--rgb-cyan-900",
+        "value": "1,24,33",
+        "color": "--color-cyan-900",
+        "colorValue": "rgba(var(--rgb-cyan-900),1)"
+      }
+    },
+    "seafoam": {
+      "50": {
+        "rgb": "--rgb-seafoam-50",
+        "value": "240,250,238",
+        "color": "--color-seafoam-50",
+        "colorValue": "rgba(var(--rgb-seafoam-50),1)"
+      },
+      "100": {
+        "rgb": "--rgb-seafoam-100",
+        "value": "219,245,227",
+        "color": "--color-seafoam-100",
+        "colorValue": "rgba(var(--rgb-seafoam-100),1)"
+      },
+      "200": {
+        "rgb": "--rgb-seafoam-200",
+        "value": "197,242,212",
+        "color": "--color-seafoam-200",
+        "colorValue": "rgba(var(--rgb-seafoam-200),1)"
+      },
+      "300": {
+        "rgb": "--rgb-seafoam-300",
+        "value": "178,245,199",
+        "color": "--color-seafoam-300",
+        "colorValue": "rgba(var(--rgb-seafoam-300),1)"
+      },
+      "400": {
+        "rgb": "--rgb-seafoam-400",
+        "value": "148,239,183",
+        "color": "--color-seafoam-400",
+        "colorValue": "rgba(var(--rgb-seafoam-400),1)"
+      },
+      "500": {
+        "rgb": "--rgb-seafoam-500",
+        "value": "124,229,168",
+        "color": "--color-seafoam-500",
+        "colorValue": "rgba(var(--rgb-seafoam-500),1)"
+      },
+      "600": {
+        "rgb": "--rgb-seafoam-600",
+        "value": "68,180,139",
+        "color": "--color-seafoam-600",
+        "colorValue": "rgba(var(--rgb-seafoam-600),1)"
+      },
+      "700": {
+        "rgb": "--rgb-seafoam-700",
+        "value": "22,126,108",
+        "color": "--color-seafoam-700",
+        "colorValue": "rgba(var(--rgb-seafoam-700),1)"
+      },
+      "800": {
+        "rgb": "--rgb-seafoam-800",
+        "value": "9,63,47",
+        "color": "--color-seafoam-800",
+        "colorValue": "rgba(var(--rgb-seafoam-800),1)"
+      },
+      "900": {
+        "rgb": "--rgb-seafoam-900",
+        "value": "2,31,21",
+        "color": "--color-seafoam-900",
+        "colorValue": "rgba(var(--rgb-seafoam-900),1)"
+      }
+    },
+    "green": {
+      "50": {
+        "rgb": "--rgb-green-50",
+        "value": "247,252,234",
+        "color": "--color-green-50",
+        "colorValue": "rgba(var(--rgb-green-50),1)"
+      },
+      "100": {
+        "rgb": "--rgb-green-100",
+        "value": "233,247,198",
+        "color": "--color-green-100",
+        "colorValue": "rgba(var(--rgb-green-100),1)"
+      },
+      "200": {
+        "rgb": "--rgb-green-200",
+        "value": "220,240,177",
+        "color": "--color-green-200",
+        "colorValue": "rgba(var(--rgb-green-200),1)"
+      },
+      "300": {
+        "rgb": "--rgb-green-300",
+        "value": "205,237,147",
+        "color": "--color-green-300",
+        "colorValue": "rgba(var(--rgb-green-300),1)"
+      },
+      "400": {
+        "rgb": "--rgb-green-400",
+        "value": "185,226,122",
+        "color": "--color-green-400",
+        "colorValue": "rgba(var(--rgb-green-400),1)"
+      },
+      "500": {
+        "rgb": "--rgb-green-500",
+        "value": "156,217,93",
+        "color": "--color-green-500",
+        "colorValue": "rgba(var(--rgb-green-500),1)"
+      },
+      "600": {
+        "rgb": "--rgb-green-600",
+        "value": "114,172,63",
+        "color": "--color-green-600",
+        "colorValue": "rgba(var(--rgb-green-600),1)"
+      },
+      "700": {
+        "rgb": "--rgb-green-700",
+        "value": "77,123,48",
+        "color": "--color-green-700",
+        "colorValue": "rgba(var(--rgb-green-700),1)"
+      },
+      "800": {
+        "rgb": "--rgb-green-800",
+        "value": "41,79,28",
+        "color": "--color-green-800",
+        "colorValue": "rgba(var(--rgb-green-800),1)"
+      },
+      "900": {
+        "rgb": "--rgb-green-900",
+        "value": "7,32,3",
+        "color": "--color-green-900",
+        "colorValue": "rgba(var(--rgb-green-900),1)"
+      }
+    },
+    "yellow": {
+      "50": {
+        "rgb": "--rgb-yellow-50",
+        "value": "252,248,232",
+        "color": "--color-yellow-50",
+        "colorValue": "rgba(var(--rgb-yellow-50),1)"
+      },
+      "100": {
+        "rgb": "--rgb-yellow-100",
+        "value": "252,245,210",
+        "color": "--color-yellow-100",
+        "colorValue": "rgba(var(--rgb-yellow-100),1)"
+      },
+      "200": {
+        "rgb": "--rgb-yellow-200",
+        "value": "247,237,181",
+        "color": "--color-yellow-200",
+        "colorValue": "rgba(var(--rgb-yellow-200),1)"
+      },
+      "300": {
+        "rgb": "--rgb-yellow-300",
+        "value": "247,235,129",
+        "color": "--color-yellow-300",
+        "colorValue": "rgba(var(--rgb-yellow-300),1)"
+      },
+      "400": {
+        "rgb": "--rgb-yellow-400",
+        "value": "252,250,232",
+        "color": "--color-yellow-400",
+        "colorValue": "rgba(var(--rgb-yellow-400),1)"
+      },
+      "500": {
+        "rgb": "--rgb-yellow-500",
+        "value": "244,223,105",
+        "color": "--color-yellow-500",
+        "colorValue": "rgba(var(--rgb-yellow-500),1)"
+      },
+      "600": {
+        "rgb": "--rgb-yellow-600",
+        "value": "243,190,52",
+        "color": "--color-yellow-600",
+        "colorValue": "rgba(var(--rgb-yellow-600),1)"
+      },
+      "700": {
+        "rgb": "--rgb-yellow-700",
+        "value": "182,118,7",
+        "color": "--color-yellow-700",
+        "colorValue": "rgba(var(--rgb-yellow-700),1)"
+      },
+      "800": {
+        "rgb": "--rgb-yellow-800",
+        "value": "82,45,0",
+        "color": "--color-yellow-800",
+        "colorValue": "rgba(var(--rgb-yellow-800),1)"
+      },
+      "900": {
+        "rgb": "--rgb-yellow-900",
+        "value": "46,21,0",
+        "color": "--color-yellow-900",
+        "colorValue": "rgba(var(--rgb-yellow-900),1)"
+      }
+    },
+    "orange": {
+      "50": {
+        "rgb": "--rgb-orange-50",
+        "value": "253,247,231",
+        "color": "--color-orange-50",
+        "colorValue": "rgba(var(--rgb-orange-50),1)"
+      },
+      "100": {
+        "rgb": "--rgb-orange-100",
+        "value": "250,233,207",
+        "color": "--color-orange-100",
+        "colorValue": "rgba(var(--rgb-orange-100),1)"
+      },
+      "200": {
+        "rgb": "--rgb-orange-200",
+        "value": "243,214,174",
+        "color": "--color-orange-200",
+        "colorValue": "rgba(var(--rgb-orange-200),1)"
+      },
+      "300": {
+        "rgb": "--rgb-orange-300",
+        "value": "245,198,140",
+        "color": "--color-orange-300",
+        "colorValue": "rgba(var(--rgb-orange-300),1)"
+      },
+      "400": {
+        "rgb": "--rgb-orange-400",
+        "value": "239,170,101",
+        "color": "--color-orange-400",
+        "colorValue": "rgba(var(--rgb-orange-400),1)"
+      },
+      "500": {
+        "rgb": "--rgb-orange-500",
+        "value": "236,132,57",
+        "color": "--color-orange-500",
+        "colorValue": "rgba(var(--rgb-orange-500),1)"
+      },
+      "600": {
+        "rgb": "--rgb-orange-600",
+        "value": "214,86,32",
+        "color": "--color-orange-600",
+        "colorValue": "rgba(var(--rgb-orange-600),1)"
+      },
+      "700": {
+        "rgb": "--rgb-orange-700",
+        "value": "148,49,7",
+        "color": "--color-orange-700",
+        "colorValue": "rgba(var(--rgb-orange-700),1)"
+      },
+      "800": {
+        "rgb": "--rgb-orange-800",
+        "value": "72,20,0",
+        "color": "--color-orange-800",
+        "colorValue": "rgba(var(--rgb-orange-800),1)"
+      },
+      "900": {
+        "rgb": "--rgb-orange-900",
+        "value": "51,13,0",
+        "color": "--color-orange-900",
+        "colorValue": "rgba(var(--rgb-orange-900),1)"
+      }
+    },
+    "red": {
+      "50": {
+        "rgb": "--rgb-red-50",
+        "value": "255,241,243",
+        "color": "--color-red-50",
+        "colorValue": "rgba(var(--rgb-red-50),1)"
+      },
+      "100": {
+        "rgb": "--rgb-red-100",
+        "value": "247,216,218",
+        "color": "--color-red-100",
+        "colorValue": "rgba(var(--rgb-red-100),1)"
+      },
+      "200": {
+        "rgb": "--rgb-red-200",
+        "value": "243,191,198",
+        "color": "--color-red-200",
+        "colorValue": "rgba(var(--rgb-red-200),1)"
+      },
+      "300": {
+        "rgb": "--rgb-red-300",
+        "value": "245,162,174",
+        "color": "--color-red-300",
+        "colorValue": "rgba(var(--rgb-red-300),1)"
+      },
+      "400": {
+        "rgb": "--rgb-red-400",
+        "value": "238,110,134",
+        "color": "--color-red-400",
+        "colorValue": "rgba(var(--rgb-red-400),1)"
+      },
+      "500": {
+        "rgb": "--rgb-red-500",
+        "value": "214,66,96",
+        "color": "--color-red-500",
+        "colorValue": "rgba(var(--rgb-red-500),1)"
+      },
+      "600": {
+        "rgb": "--rgb-red-600",
+        "value": "164,23,66",
+        "color": "--color-red-600",
+        "colorValue": "rgba(var(--rgb-red-600),1)"
+      },
+      "700": {
+        "rgb": "--rgb-red-700",
+        "value": "113,10,41",
+        "color": "--color-red-700",
+        "colorValue": "rgba(var(--rgb-red-700),1)"
+      },
+      "800": {
+        "rgb": "--rgb-red-800",
+        "value": "62,3,24",
+        "color": "--color-red-800",
+        "colorValue": "rgba(var(--rgb-red-800),1)"
+      },
+      "900": {
+        "rgb": "--rgb-red-900",
+        "value": "40,1,19",
+        "color": "--color-red-900",
+        "colorValue": "rgba(var(--rgb-red-900),1)"
+      }
+    },
+    "pink": {
+      "50": {
+        "rgb": "--rgb-pink-50",
+        "value": "253,240,254",
+        "color": "--color-pink-50",
+        "colorValue": "rgba(var(--rgb-pink-50),1)"
+      },
+      "100": {
+        "rgb": "--rgb-pink-100",
+        "value": "238,220,243",
+        "color": "--color-pink-100",
+        "colorValue": "rgba(var(--rgb-pink-100),1)"
+      },
+      "200": {
+        "rgb": "--rgb-pink-200",
+        "value": "229,201,235",
+        "color": "--color-pink-200",
+        "colorValue": "rgba(var(--rgb-pink-200),1)"
+      },
+      "300": {
+        "rgb": "--rgb-pink-300",
+        "value": "225,173,232",
+        "color": "--color-pink-300",
+        "colorValue": "rgba(var(--rgb-pink-300),1)"
+      },
+      "400": {
+        "rgb": "--rgb-pink-400",
+        "value": "201,119,209",
+        "color": "--color-pink-400",
+        "colorValue": "rgba(var(--rgb-pink-400),1)"
+      },
+      "500": {
+        "rgb": "--rgb-pink-500",
+        "value": "171,75,177",
+        "color": "--color-pink-500",
+        "colorValue": "rgba(var(--rgb-pink-500),1)"
+      },
+      "600": {
+        "rgb": "--rgb-pink-600",
+        "value": "119,28,134",
+        "color": "--color-pink-600",
+        "colorValue": "rgba(var(--rgb-pink-600),1)"
+      },
+      "700": {
+        "rgb": "--rgb-pink-700",
+        "value": "84,16,101",
+        "color": "--color-pink-700",
+        "colorValue": "rgba(var(--rgb-pink-700),1)"
+      },
+      "800": {
+        "rgb": "--rgb-pink-800",
+        "value": "42,2,56",
+        "color": "--color-pink-800",
+        "colorValue": "rgba(var(--rgb-pink-800),1)"
+      },
+      "900": {
+        "rgb": "--rgb-pink-900",
+        "value": "238,220,243",
+        "color": "--color-pink-900",
+        "colorValue": "rgba(var(--rgb-pink-100),1)"
+      }
+    },
+    "gray": {
+      "50": {
+        "rgb": "--rgb-gray-50",
+        "value": "246,246,248",
+        "color": "--color-gray-50",
+        "colorValue": "rgba(var(--rgb-gray-50),1)"
+      },
+      "100": {
+        "rgb": "--rgb-gray-100",
+        "value": "238,239,242",
+        "color": "--color-gray-100",
+        "colorValue": "rgba(var(--rgb-gray-100),1)"
+      },
+      "200": {
+        "rgb": "--rgb-gray-200",
+        "value": "227,228,232",
+        "color": "--color-gray-200",
+        "colorValue": "rgba(var(--rgb-gray-200),1)"
+      },
+      "300": {
+        "rgb": "--rgb-gray-300",
+        "value": "207,208,216",
+        "color": "--color-gray-300",
+        "colorValue": "rgba(var(--rgb-gray-300),1)"
+      },
+      "400": {
+        "rgb": "--rgb-gray-400",
+        "value": "169,172,182",
+        "color": "--color-gray-400",
+        "colorValue": "rgba(var(--rgb-gray-400),1)"
+      },
+      "500": {
+        "rgb": "--rgb-gray-500",
+        "value": "124,127,136",
+        "color": "--color-gray-500",
+        "colorValue": "rgba(var(--rgb-gray-500),1)"
+      },
+      "600": {
+        "rgb": "--rgb-gray-600",
+        "value": "87,90,100",
+        "color": "--color-gray-600",
+        "colorValue": "rgba(var(--rgb-gray-600),1)"
+      },
+      "700": {
+        "rgb": "--rgb-gray-700",
+        "value": "59,62,71",
+        "color": "--color-gray-700",
+        "colorValue": "rgba(var(--rgb-gray-700),1)"
+      },
+      "800": {
+        "rgb": "--rgb-gray-800",
+        "value": "35,39,48",
+        "color": "--color-gray-800",
+        "colorValue": "rgba(var(--rgb-gray-800),1)"
+      },
+      "900": {
+        "rgb": "--rgb-gray-900",
+        "value": "18,22,30",
+        "color": "--color-gray-900",
+        "colorValue": "rgba(var(--rgb-gray-900),1)"
+      }
+    }
+  },
+  "neutrals": {
+    "white": {
+      "rgb": "--rgb-white",
+      "color": "--color-white",
+      "value": "255,255,255"
+    },
+    "black": {
+      "rgb": "--rgb-black",
+      "color": "--color-black",
+      "value": "0,0,0"
+    }
+  },
+  "note": "Every --color-* is an rgba() wrapper over an --rgb-* channel triplet, so a hue changes in exactly one place. This is the site's own idiom (assets/tokens/tokens.css), reused verbatim rather than renamed to a generic vocabulary."
+}

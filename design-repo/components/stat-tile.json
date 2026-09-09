@@ -1,0 +1,14 @@
+{
+  "$schema": "dtai-design-tokens/component",
+  "id": "stat-tile",
+  "composedOf": [
+    "primitives/Text"
+  ],
+  "props": {
+    "value": "Text role=heading.xl, maxWords 3 (e.g. '$4.5 Trillion+')",
+    "label": "Text role=body.sm, maxWords 8"
+  },
+  "measured": {
+    "uses": "3-4 per stats-band, appears on homepage, correspondent-banking, property-management, political-treasury"
+  }
+}

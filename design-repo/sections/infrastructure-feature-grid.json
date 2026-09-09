@@ -1,0 +1,68 @@
+{
+  "$schema": "dtai-design-tokens/section",
+  "id": "infrastructure-feature-grid",
+  "typeId": "infrastructure-feature-grid",
+  "registryId": "section.infrastructure-feature-grid",
+  "version": "1.0.0",
+  "category": "content",
+  "purpose": "Homepage-only large multi-item grid of infrastructure building blocks.",
+  "industryTags": [
+    "fintech",
+    "banking-infrastructure",
+    "b2b-saas"
+  ],
+  "styleTags": [
+    "flagship",
+    "dense"
+  ],
+  "measuredFrom": [
+    "/ (_infrastructure__Wrapper, 3242px)"
+  ],
+  "contentModel": {
+    "required": [
+      "eyebrow",
+      "heading (role=heading.xl, maxWords 10)",
+      "items[4..8]: {icon, title (maxWords 4), description (maxWords 24)}"
+    ]
+  },
+  "layout": {
+    "desktop_1440x900": {
+      "height": "3242px, 3-4 column grid"
+    },
+    "tablet_810x1080": {
+      "height": "~4000px, 2-column"
+    },
+    "mobile_390x844": {
+      "height": "~6000px, 1-column"
+    }
+  },
+  "motion": {
+    "driven": true,
+    "roles": [
+      "entrance.slideUp per tile, staggered"
+    ],
+    "reducedMotionFallback": "static grid"
+  },
+  "compatibility": {
+    "onlyOn": [
+      "homepage"
+    ],
+    "maxInstancesPerPage": 1
+  },
+  "generation": {
+    "componentRefs": [
+      "primitives/Icon.json",
+      "primitives/Text.json"
+    ],
+    "tokenRefs": []
+  },
+  "accessibility": {
+    "headingLevel": "h2"
+  },
+  "constraints": {
+    "maxWords": {
+      "title": 4,
+      "description": 24
+    }
+  }
+}

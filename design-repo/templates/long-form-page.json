@@ -1,0 +1,30 @@
+{
+  "$schema": "dtai-design-tokens/template",
+  "id": "long-form-page",
+  "purpose": "A single tall content container with no repeating section structure \u2014 used for the changelog feed and the SVB update FAQ.",
+  "measuredRoutes": [
+    "/changelog/",
+    "/svb-update/"
+  ],
+  "nodes": [
+    {
+      "typeId": "site-header",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "long-form-content",
+      "count": "1",
+      "optional": false
+    },
+    {
+      "typeId": "site-footer",
+      "count": "1",
+      "optional": false
+    }
+  ],
+  "notes": [
+    "changelog (27,872px) and svb-update (2,556px) are both a single Container>long-form-content node \u2014 by far the widest height range of any template, entirely a function of accumulated content length rather than layout.",
+    "Round 3: added the trailing site-footer node. Both /changelog/ and /svb-update/'s live builds render a real Footer__ component (confirmed in the served index.html); this template previously ended on long-form-content with no documented reason (unlike the deliberate, documented omission for protected-deposits-page/simple-page in README's Known Gaps section)."
+  ]
+}

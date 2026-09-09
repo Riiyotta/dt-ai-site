@@ -1,0 +1,120 @@
+{
+  "$schema": "dtai-design-tokens/foundation/motion",
+  "source": "measured transition/animation computed styles + @keyframes rules across 34 routes x 3 breakpoints; tokens.css itself ships no motion tokens",
+  "durations": [
+    {
+      "value": "0.2s",
+      "uses": 2039
+    },
+    {
+      "value": "0.15s",
+      "uses": 542
+    },
+    {
+      "value": "0.75s, 0.4s",
+      "uses": 394
+    },
+    {
+      "value": "0.2s, 0.2s, 0.2s",
+      "uses": 385
+    },
+    {
+      "value": "0.2s, 0.2s",
+      "uses": 267
+    },
+    {
+      "value": "0.1s",
+      "uses": 225
+    },
+    {
+      "value": "0.5s",
+      "uses": 109
+    },
+    {
+      "value": "0.25s",
+      "uses": 104
+    },
+    {
+      "value": "2s, 2s",
+      "uses": 103
+    },
+    {
+      "value": "0.3s, 0.3s, 0.3s",
+      "uses": 102
+    },
+    {
+      "value": "0.65s, 0.65s",
+      "uses": 77
+    },
+    {
+      "value": "0.05s",
+      "uses": 71
+    }
+  ],
+  "easings": [
+    {
+      "value": "ease",
+      "uses": 2912
+    },
+    {
+      "value": "ease, ease",
+      "uses": 664
+    },
+    {
+      "value": "ease, ease, ease",
+      "uses": 508
+    },
+    {
+      "value": "cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1)",
+      "uses": 176
+    },
+    {
+      "value": "linear",
+      "uses": 104
+    },
+    {
+      "value": "ease-out, ease-out, ease-out",
+      "uses": 27
+    },
+    {
+      "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "uses": 18
+    },
+    {
+      "value": "cubic-bezier(0.22, 1, 0.36, 1), cubic-bezier(0.22, 1, 0.36, 1)",
+      "uses": 9
+    },
+    {
+      "value": "cubic-bezier(0.8, 0, 0.05, 1)",
+      "uses": 6
+    },
+    {
+      "value": "cubic-bezier(0.25, 1, 0.25, 1)",
+      "uses": 6
+    },
+    {
+      "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+      "uses": 6
+    },
+    {
+      "value": "cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1), cubic-bezier(0.16, 1, 0.3, 1)",
+      "uses": 3
+    }
+  ],
+  "namedKeyframes": {
+    "check": "stroke-dashoffset 0 - SVG checkmark draw-on",
+    "hero-globe-scale": "scale(1)+opacity(1) end state - hero globe/graphic entrance",
+    "ach-show": "max-height + scale/opacity reveal - accordion-style row expand (ACH returns/disputes UI)",
+    "fadeIn": "opacity 0->1 with perspective rotateY - card flip-in",
+    "fadeInUp": "opacity 0->1, paired with a translateY transition on the same element",
+    "slideUp": "translate3d Y 20px -> 0 - panel/card slide-in",
+    "blurOut": "filter blur(2px)->blur(0) - image/panel sharpen-in",
+    "scale-pattern-animation-one": "opacity 0->1->0 - decorative dot-pattern shimmer (phase A)",
+    "scale-pattern-animation-two": "opacity 1->0->1 - decorative dot-pattern shimmer (phase B, inverse of phase A)",
+    "background-gradient-animation": "hue-rotate(15deg -> -80deg -> 15deg) - animated hero gradient background",
+    "blink": "opacity 50% keyframe - cursor/live-indicator blink",
+    "swipe": "background-position sweep with opacity fade - shimmer/skeleton-loading sweep",
+    "dotFadeOutIn": "opacity+scale pulse via --dot-inactive-opacity/--dot-inactive-scale custom properties - carousel/stepper dot indicator"
+  },
+  "reducedMotion": "tokens.css defines a global @media (prefers-reduced-motion: reduce) block forcing animation-duration/transition-duration to 0.01ms and scroll-behavior to auto on every element."
+}
